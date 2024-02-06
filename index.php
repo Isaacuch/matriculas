@@ -35,20 +35,20 @@
                      <option value="">
                        Selecciona
                      </option>
-                     <option value="Primero">
-                       Primero
+                     <option value="Computación">
+                       Computación
                      </option>
-                     <option value="Segundo">
-                       Segundo
+                     <option value="Robótica">
+                       Robótica
                      </option>
-                     <option value="Tercero">
-                       Tercero
+                     <option value="Programación">
+                       Programación
                      </option>
-                     <option value="Cuarto">
-                       Cuarto
+                     <option value="Excel Basico ">
+                       Excel Basico 
                      </option>
-                     <option value="Quinto">
-                       Quinto
+                     <option value="Excel Avanzado">
+                       Excel Avanzado
                      </option>
                    </select>
                 </td>
@@ -82,7 +82,7 @@
                 $stroll= $row['roll'];
                 $stname= $row['name'];
                 $stclass= $row['class'];
-                $city= $row['city'];
+                $city= $row['sede'];
                 $photo= $row['photo'];
                 $pcontact= $row['pcontact'];
               ?>
@@ -99,12 +99,12 @@
                 <td><?= isset($stroll)?$stroll:'';?></td>
               </tr>
               <tr>
-                <td>Grado</td>
+                <td>Matricula del curso</td>
                 <td><?= isset($stclass)?$stclass:'';?></td>
               </tr>
               <tr>
-                <td>Dirección</td>
-                <td><?= isset($city)?$city:'';?></td>
+                <td></td>Sede
+                <td><?= isset($sede)?$sede:'';?></td>
               </tr>
               <tr>
                 <td>Fecha de Ingreso</td>

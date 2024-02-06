@@ -52,7 +52,7 @@
 
 	<?php
 		if (isset($id)) {
-			$query = "SELECT `id`, `name`, `roll`, `class`, `city`, `pcontact`, `photo`, `datetime` FROM `student_info` WHERE `id`=$id";
+			$query = "SELECT `id`, `name`, `roll`, `class`, `sede`, `pcontact`, `photo`, `datetime` FROM `student_info` WHERE `id`=$id";
 			$result = mysqli_query($db_con,$query);
 			$row = mysqli_fetch_array($result);
 		}
@@ -77,14 +77,14 @@
 		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="[0-9]{10}" placeholder="+57..." required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="class">Grado</label>
+		    <label for="class">Matricula del curso</label>
 		    <select name="class" class="form-control" id="class" required="" value="">
 		    	<option>Select</option>
-		    	<option value="Primero" <?= $row['class']=='Primero'? 'selected':'' ?>>Primero</option>
-		    	<option value="Segundo" <?= $row['class']=='Segundo'? 'selected':'' ?>>Segundo</option>
-		    	<option value="Tercero" <?= $row['class']=='Tercero'? 'selected':'' ?>>Tercero</option>
-		    	<option value="Cuarto" <?= $row['class']=='Cuarto'? 'selected':'' ?>>Cuarto</option>
-		    	<option value="Quinto" <?= $row['class']=='Quinto'? 'selected':'' ?>>Quinto</option>
+		    	<option value="Primero" <?= $row['class']=='Computación'? 'selected':'' ?>>Computación</option>
+		    	<option value="Segundo" <?= $row['class']=='Robótica'? 'selected':'' ?>>Robótica</option>
+		    	<option value="Tercero" <?= $row['class']=='Programación'? 'selected':'' ?>>Programación</option>
+		    	<option value="Cuarto" <?= $row['class']=='Excel Basico'? 'selected':'' ?>>Excel Basico</option>
+		    	<option value="Quinto" <?= $row['class']=='Excel Avanzado'? 'selected':'' ?>>Excel Avanzado</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">

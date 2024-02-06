@@ -78,14 +78,14 @@
 		    <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-9]{10}" value="<?= isset($pcontact)? $pcontact: '' ; ?>" placeholder="+57........." required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="class">Grado Estudiantil</label>
+		    <label for="class">Centros interactivos para matricular</label>
 		    <select name="class" class="form-control" id="class" required="">
 		    	<option>Selecciona</option>
-		    	<option value="Primero">Primero</option>
-		    	<option value="Segundo">Segundo</option>
-		    	<option value="Tercero">Tercero</option>
-		    	<option value="Cuarto">Cuarto</option>
-		    	<option value="Quinto">Quinto</option>
+		    	<option value="Primero">Computación</option>
+		    	<option value="Segundo">Robótica</option>
+		    	<option value="Tercero">Programación</option>
+		    	<option value="Cuarto">Excel Basico </option>
+		    	<option value="Quinto">Excel Avanzado</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">

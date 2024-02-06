@@ -70,7 +70,7 @@
 		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{6}" id="roll" required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="address">Dirección de Estudiante</label>
+		    <label for="address">Sede del Estudiante</label>
 		    <input name="address" type="text" value="<?= isset($address)? $address: '' ; ?>" class="form-control" id="address" required="">
 	  	</div>
 	  	<div class="form-group">

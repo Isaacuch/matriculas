@@ -56,7 +56,7 @@
       <th scope="col">SL</th>
       <th scope="col">Nombre</th>
       <th scope="col">Matrícula</th>
-      <th scope="col">Dirección</th>
+      <th scope="col">Sede</th>
       <th scope="col">Contacto</th>
       <th scope="col">Fotografía</th>
       <th scope="col">Acción</th>
@@ -72,7 +72,7 @@
         echo '<td>'.$i.'</td>
           <td>'.ucwords($result['name']).'</td>
           <td>'.$result['roll'].'</td>
-          <td>'.ucwords($result['city']).'</td>
+          <td>'.ucwords($result['sede']).'</td>
           <td>'.$result['pcontact'].'</td>
           <td><img src="images/'.$result['photo'].'" height="50px"></td>
           <td>

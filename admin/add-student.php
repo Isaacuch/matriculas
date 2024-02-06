@@ -19,7 +19,7 @@
   	$photo = end($photo); 
   	$photo = $roll.date('Y-m-d-m-s').'.'.$photo;
 
-  	$query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `city`, `pcontact`, `photo`) VALUES ('$name', '$roll', '$class', '$address', '$pcontact','$photo');";
+  	$query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `sede`, `pcontact`, `photo`) VALUES ('$name', '$roll', '$class', '$address', '$pcontact','$photo');";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Estudiante Ingresado Exitosamente</p>';
   		move_uploaded_file($_FILES['photo']['tmp_name'], 'images/'.$photo);

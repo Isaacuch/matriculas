@@ -28,7 +28,7 @@
   	}
   	
 
-  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`city`='$address',`pcontact`='$pcontact',`photo`='$photo' WHERE `id`= $id";
+  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`sede`='$address',`pcontact`='$pcontact',`photo`='$photo' WHERE `id`= $id";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Student Updated!</p>';
 		if (!empty($_FILES['photo']['name'])) {
@@ -69,8 +69,8 @@
 		    <input name="roll" type="text" class="form-control" pattern="[0-9]{6}" id="roll" value="<?php echo $row['roll']; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="address">Dirección de Estudiante</label>
-		    <input name="address" type="text" class="form-control" id="address" value="<?php echo $row['city']; ?>" required="">
+		    <label for="address">Sede del Estudiante</label>
+		    <input name="address" type="text" class="form-control" id="address" value="<?php echo $row['sede']; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="pcontact">Número de Contacto</label>

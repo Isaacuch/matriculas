@@ -81,11 +81,11 @@
 		    <label for="class">Centros interactivos para matricular</label>
 		    <select name="class" class="form-control" id="class" required="">
 		    	<option>Selecciona</option>
-		    	<option value="Primero">Computación</option>
-		    	<option value="Segundo">Robótica</option>
-		    	<option value="Tercero">Programación</option>
-		    	<option value="Cuarto">Excel Basico </option>
-		    	<option value="Quinto">Excel Avanzado</option>
+		    	<option value="Computación">Computación</option>
+		    	<option value="Robótica">Robótica</option>
+		    	<option value="Programación">Programación</option>
+		    	<option value="Excel Basico ">Excel Basico </option>
+		    	<option value="Excel Avanzado">Excel Avanzado</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">

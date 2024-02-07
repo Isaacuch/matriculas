@@ -32,7 +32,7 @@ if (!isset($_SESSION['user_login'])) {
   <body>
 <nav class="navbar navbar-expand-lg navbar-dark grey bg-dark grey">
   <div id="logo-container">
-    <img id="logo" src="./images/logo.png" alt="Logo de la empresa">
+    <img id="logo" src="./images/logo1.png" alt="Logo de la empresa">
   </div>
 
 

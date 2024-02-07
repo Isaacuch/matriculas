@@ -31,9 +31,8 @@ if (!isset($_SESSION['user_login'])) {
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php"><i class="fas fa-chart-line fa-3x "></i></a>
+  <img src="images/funda vida logo.png" class="img-responsive
 
-  // fas fa-chart-line fa-3x 
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

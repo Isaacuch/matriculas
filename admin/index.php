@@ -30,7 +30,7 @@ if (!isset($_SESSION['user_login'])) {
     <title>Panel de Control</title>
   </head>
   <body>
-<nav class="navbar navbar-expand-lg navbar-grey bg-grey">
+<nav class="navbar navbar-expand-lg navbar-dark grey bg-dark grey">
   <div id="logo-container">
     <img id="logo" src="./images/logo.png" alt="Logo de la empresa">
   </div>

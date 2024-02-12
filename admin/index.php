@@ -30,12 +30,11 @@ if (!isset($_SESSION['user_login'])) {
     <title>Panel de Control</title>
   </head>
   <body>
+
 <nav class="navbar navbar-expand-lg navbar-dark grey bg-dark grey">
-  <div id="Logo-container">
-    <img id="logo" src="./images/logo1.png" alt="Logo de la empresa">
+  <div id="logo-container ">
+    <img id="Logo" src="./images/logo1.png" alt="Logo de la empresa">
   </div>
-
-
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

@@ -1,11 +1,11 @@
-#Logo-container {
+#logo-container {
 	position: fixed;
 	top: 10px;
 	left: 10px;
 	z-index: 1000;
 }
 
-#logo {
+#Logo {
 width: 100px;
 height: auto;
 }

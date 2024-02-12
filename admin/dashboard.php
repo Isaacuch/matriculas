@@ -85,7 +85,7 @@
           <div class="col-sm-6">
             
             <div class="clearfix"></div>
-            <div class="float-sm-right">Hola hola</div>
+            <div class="float-sm-right">Registro</div>
           </div>
         </div>
       </div>

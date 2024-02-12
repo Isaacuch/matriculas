@@ -132,7 +132,7 @@
               <p>Si tienes una cuenta de acceso administrativo, puedes <a href="login.php">Ingresar Aquí</a></p>
     </div>
 		<br><br><br><br><br><br>		  
-    	<h2>Para más desarrollos gratuitos accede a <a href="https://www.configuroweb.com/tag/php/">ConfiguroWeb</a></h2>
+    	<h2>Para más desarrollos gratuitos accede a <a href="https://www.configuroweb.com/tag/php/">Configuro Web</a></h2>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

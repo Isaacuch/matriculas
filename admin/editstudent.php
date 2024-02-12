@@ -1,13 +1,9 @@
 <?php 
 
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
+if (!isset($_COOKIE['auth_token'])) {
+    header('Location: login.php'); // Redirigir al usuario a la página de inicio de sesión si no está autenticado
+    exit();
 }
-
-//session_start();
-//if (!isset($_SESSION['user_login'])){
-//	header('Location: login.php');
-//}
 
   $corepage = explode('/', $_SERVER['PHP_SELF']);
     $corepage = end($corepage);

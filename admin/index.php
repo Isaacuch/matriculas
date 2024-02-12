@@ -62,7 +62,6 @@ if (!isset($_SESSION['user_login'])) {
               <a href="index.php?page=all-student" class="list-group-item list-group-item-action"><i class="fa fa-users"></i> Todos los Estudiantes</a>
               <a href="index.php?page=all-users" class="list-group-item list-group-item-action"><i class="fa fa-users"></i> Todos los Usuarios</a>
               <a href="index.php?page=user-profile" class="list-group-item list-group-item-action"><i class="fa fa-user"></i> Perfil de Usuario</a>
-            //AQUI SE DEBE AGREGAR LA SECCION DONDE SE VISUALIZAN LOS CURSOS.
             </div>
           </div>
           <div class="col-md-9">

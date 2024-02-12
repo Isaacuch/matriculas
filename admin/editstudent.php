@@ -1,4 +1,11 @@
 <?php 
+
+session_start();
+if (!isset($_SESSION['user_login'])){
+	header('Location: login.php');
+}
+
+
   $corepage = explode('/', $_SERVER['PHP_SELF']);
     $corepage = end($corepage);
     if ($corepage!=='index.php') {

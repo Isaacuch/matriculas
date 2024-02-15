@@ -74,6 +74,7 @@
           </div>
           //Aquí iria el codigo del notepad
           <div class="container1">
+             <h1 class="text-center">Lista de Cursos Disponibles</h1><br>
             <div class="Cursos">
               <h2>Programación</h2>
               <p>Descripción: Curso Introductorio sobre programación básica</p>

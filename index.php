@@ -81,13 +81,13 @@
               <p>Requisito: Estar matriculado en la Fundación</p>
               <img src="admin/images/progra1.jpg" alt="Imagen 1">
             </div>
-            
+
             <div class="Cursos">
               <h2>Robótica</h2>
               <p>Descripción: Curso Introductorio sobre programación básica</p>
               <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
               <p>Requisito: Estar matriculado en la Fundación</p>
-              <img src="admin/images/progra1.jpg" alt="Imagen 1">
+              <img src="admin/images/robo2.jpg" alt="Imagen 1">
             </div>
 
             <div class="Cursos">
@@ -95,7 +95,7 @@
               <p>Descripción: Curso Introductorio sobre programación básica</p>
               <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
               <p>Requisito: Estar matriculado en la Fundación</p>
-              <img src="admin/images/progra1.jpg" alt="Imagen 1">
+              <img src="admin/images/Computación.jpg" alt="Imagen 1">
               </div>
 
             <div class="Cursos">
@@ -103,14 +103,14 @@
               <p>Descripción: Curso Introductorio sobre programación básica</p>
               <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
               <p>Requisito: Estar matriculado en la Fundación</p>
-              <img src="admin/images/progra1.jpg" alt="Imagen 1">
+              //<img src="admin/images/Excel Basico1.jpg" alt="Imagen 1">
             </div>
             <div class="Cursos">
               <h2>Excel Avanzado</h2>
               <p>Descripción: Curso Introductorio sobre programación básica</p>
               <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
               <p>Requisito: Estar matriculado en la Fundación</p>
-              <img src="admin/images/progra1.jpg" alt="Imagen 1">
+              <img src="admin/images/Excel Avanzado1.jpg" alt="Imagen 1">
             </div>
             <div class="Cursos">
               

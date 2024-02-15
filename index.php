@@ -85,6 +85,7 @@
               <p>Requisito: Estar matriculado en la Fundación</p>
               <img src="admin/images/progra1.jpg" alt="Imagen 1">
             </div>
+            <ul>
 
             <div class="Cursos">
               <h2>Robótica</h2>
@@ -93,6 +94,7 @@
               <p>Requisito: Estar matriculado en la Fundación</p>
               <img src="admin/images/robo2.jpg" alt="Imagen 2">
             </div>
+            <ul>
 
             <div class="Cursos">
               <h2>Computación</h2>
@@ -101,6 +103,7 @@
               <p>Requisito: Estar matriculado en la Fundación</p>
               <img src="admin/images/Computación.jpg" alt="Imagen 3">
               </div>
+              <ul>
 
             <div class="Cursos">
               <h2>Excel Basico</h2>
@@ -109,6 +112,7 @@
               <p>Requisito: Estar matriculado en la Fundación</p>
               <img src="admin/images/Excel Basico1.jpg" alt="Imagen 4">
             </div>
+            <ul>
 
             <div class="Cursos">
               <h2>Excel Avanzado</h2>
@@ -117,7 +121,7 @@
               <p>Requisito: Estar matriculado en la Fundación</p>
               <img src="admin/images/Excel Avanzado1.jpg" alt="Imagen 5">
             </div>
-          
+          <ul>
 
         <?php if (isset($_POST['showinfo'])) {
           $choose= $_POST['choose'];

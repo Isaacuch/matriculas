@@ -89,7 +89,7 @@
                 "Descripción" => "Descripción: Curso Introductorio sobre robótica",
                 "Horario" => "Horario: De lunes a Viernes, de 1pm a 4pm",
                 "Requisito" => "Requisito del Curso: Tener conocimiento de programación o haber aprobado el curso de Programación",
-                "imagen" => "./images/robótica.png"
+                "imagen" => "./images/usuario1.jpg"
               ],
               [
                 "Nombre" => "Computación",

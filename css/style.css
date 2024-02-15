@@ -9,6 +9,9 @@ body {
 	margin: 0 auto;
 	padding: 20px;
 	}
+.container1 {
+	max-width: 80%;
+}
 
 h1 {
 	text-align: center;
@@ -37,6 +40,21 @@ p {
 p strong {
 	font-weight: bold;
 	}
+
+image {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
 
 #logo-container {
 	position: fixed;

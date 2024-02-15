@@ -72,7 +72,50 @@
           </form>
             </div>
           </div>
+
+          //Aquí iria el codigo del notepad
+          <div class="container1">
+            <div class="Cursos">
+              <h2>Programación</h2>
+              <p>Descripción: Curso Introductorio sobre programación básica</p>
+              <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
+              <p>Requisito: Estar matriculado en la Fundación</p>
+              <img src="admin/images/progra1.jpg" alt="Imagen 1">
+            </div>
+
+            <div class="Cursos">
+              <h2>Robótica</h2>
+              <p>Descripción: Curso Introductorio sobre programación básica</p>
+              <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
+              <p>Requisito: Estar matriculado en la Fundación</p>
+              <img src="admin/images/robo2.jpg" alt="Imagen 2">
+            </div>
+
+            <div class="Cursos">
+              <h2>Computación</h2>
+              <p>Descripción: Curso Introductorio sobre programación básica</p>
+              <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
+              <p>Requisito: Estar matriculado en la Fundación</p>
+              <img src="admin/images/Computación.jpg" alt="Imagen 3">
+              </div>
+
+            <div class="Cursos">
+              <h2>Excel Basico</h2>
+              <p>Descripción: Curso Introductorio sobre programación básica</p>
+              <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
+              <p>Requisito: Estar matriculado en la Fundación</p>
+              <img src="admin/images/Excel Basico1.jpg" alt="Imagen 4">
+            </div>
+
+            <div class="Cursos">
+              <h2>Excel Avanzado</h2>
+              <p>Descripción: Curso Introductorio sobre programación básica</p>
+              <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
+              <p>Requisito: Estar matriculado en la Fundación</p>
+              <img src="admin/images/Excel Avanzado1.jpg" alt="Imagen 5">
+            </div>
           
+
         <?php if (isset($_POST['showinfo'])) {
           $choose= $_POST['choose'];
           $roll = $_POST['roll'];

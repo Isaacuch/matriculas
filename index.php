@@ -114,7 +114,6 @@
               <img src="admin/images/Excel Avanzado1.jpg" alt="Imagen 1">
             </div>
 
-        <br>
         <?php if (isset($_POST['showinfo'])) {
           $choose= $_POST['choose'];
           $roll = $_POST['roll'];

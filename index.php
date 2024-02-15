@@ -110,7 +110,8 @@
                 "Descripción" => "Descripción: Curso de computación donde aprenderemos el funcionamiento de las computadoras",
                 "Horario" => "Horario: De lunes a Viernes, de 9am a 12md",
                 "Requisito" => "Requisito del Curso: Saber ¿Que es Excel?",
-                "imagen" => "./../images/logo1.png" 
+                //"imagen" => "./../images/logo1.png"
+                "imagen" => "../images/logo.png"
               ],
               //Añade más Cursos Aquí
             ];

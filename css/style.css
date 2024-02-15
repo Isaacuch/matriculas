@@ -21,6 +21,7 @@ body {
 	height: auto;
 }
 .curso h2 {
+	padding: 10px 20px 20;
 	text-align: center;
 	margin-top: 10px;
 }

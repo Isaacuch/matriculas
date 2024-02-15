@@ -71,6 +71,63 @@
           </form>
             </div>
           </div>
+          <div class="container">
+          <h1 class="text-center">Lista de Cursos Disponibles</h1><br>
+          <ul>
+            <?php
+            //Definir la lista de cursos disponibles con su respectiva información
+            $cursos_disponibles = [
+              [
+                "Nombre" => "Programación",
+                "Descripción" => "Curso Introductorio sobre programación básica",
+                "Imagen" => "./images/programacion.png",
+                "Horario" => "De lunes a Viernes, De 12md a 3pm",
+                "Requisito" => "Estar matriculado en la Fundación"
+              ],
+              [
+                "Nombre" => "Robótica",
+                "Descripción" => "Curso Introductorio sobre robótica",
+                "Imagen" => "./images/robótica.png",
+                "Horario" => "De lunes a Viernes, De 1pm a 4pm",
+                "Requisito" => "Tener conocimiento de programación o haber aprobado el curso de Programación"
+              ],
+              [
+                "Nombre" => "Computación",
+                "Descripción" => "Curso de computación donde aprenderemos el funcionamiento de las computadoras",
+                "Imagen" => "./images/Computación.png",
+                "Horario" => "De lunes a Viernes, De 8am a 11am",
+                "Requisito" => "Disponibilidad de aprender"
+              ],
+              [
+                "Nombre" => "Excel Avanzado",
+                "Descripción" => "Curso de computación donde aprenderemos el funcionamiento de las computadoras",
+                "Imagen" => "./images/Excel Avanzado.png",
+                "Horario" => "De lunes a Viernes, De 3pm a 6pm",
+                "Requisito" => "Haber aprobado del curso de Excel Básico"
+              ],
+              [
+                "Nombre" => "Excel Basico",
+                "Descripción" => "Curso de computación donde aprenderemos el funcionamiento de las computadoras",
+                "Imagen" => "./images/Excel Basico.png",
+                "Horario" => "De lunes a Viernes, De 9am a 12md",
+                "Requisito" => "Saber ¿Que es Excel?"
+              ],
+              //Añade más Cursos Aquí
+            ];
+            //Mostrar la lista de los cursos diponibles con su información
+            foreach ($cursos_disponibles as $curso) {
+              echo "<li>";
+              echo "<h2>{$curso['Nombre']}</h2>";
+              echo "<p>{$curso['Descripción']}</p>";
+              echo "<img src='{$curso['Imagen']}' alt='{$curso['nombre']}'>";
+              echo "<p>{$curso['Horario']}</p>";
+              echo "<p>{$curso['Requisito']}</p>";
+              echo "</li>";
+            }
+            ?>
+            </ul>
+          </div>
+
         <br>
         <?php if (isset($_POST['showinfo'])) {
           $choose= $_POST['choose'];
@@ -115,7 +172,7 @@
         </div>  
       <?php 
           }else{
-                echo '<p style="color:red;">Por favor ingrese un número válido de matricula y grado</p>';
+                echo '<p style="color:red;">Por favor ingrese un número válido de matricula y sede</p>';
               }
             }else{
               echo '<p style="color:red;">Tu información ingresada no coincide</p>';

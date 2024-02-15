@@ -39,8 +39,6 @@ if(isset($_SESSION['user_login'])){
 		}
 		
 	}
-
-
 ?>
 <!doctype html>
 <html lang="en">

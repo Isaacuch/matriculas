@@ -110,7 +110,7 @@
                 "Descripción" => "Descripción: Curso de computación donde aprenderemos el funcionamiento de las computadoras",
                 "Horario" => "Horario: De lunes a Viernes, de 9am a 12md",
                 "Requisito" => "Requisito del Curso: Saber ¿Que es Excel?",
-                "imagen" => "https://www.google.com/url?sa=i&url=https%3A%2F%2Fasic.blogs.upv.es%2Fexcel-avanzado-importacion-y-analisis-de-datos%2F&psig=AOvVaw1nizS4DHFIAihubEphcHCf&ust=1708099476349000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjfsa33rYQDFQAAAAAdAAAAABAE" 
+                "imagen" => "" 
               ],
               //Añade más Cursos Aquí
             ];
@@ -121,7 +121,7 @@
               echo "<p>{$curso['Descripción']}</p>";
               echo "<p>{$curso['Horario']}</p>";
               echo "<p>{$curso['Requisito']}</p>";
-              echo "<img src={$curso['imagen']} alt='{$curso['imagen']}'";
+              echo "<img src={$curso['imagen']} alt='{$curso['ilustracion']}'";
               echo "</li>";
             }
             ?>

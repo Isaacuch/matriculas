@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -83,6 +84,7 @@
                 "Horario" => "Horario: De lunes a Viernes, de 12md a 3pm",
                 "Requisito" => "Requisito del Curso: Estar matriculado en la Fundación",
                 "imagen" => "./images/progra1.jpg"
+      
               ],
               [
                 "Nombre" => "Robótica",

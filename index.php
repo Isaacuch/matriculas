@@ -82,7 +82,7 @@
                 "Descripción" => "Descripción: Curso Introductorio sobre programación básica",
                 "Horario" => "Horario: De lunes a Viernes, de 12md a 3pm",
                 "Requisito" => "Requisito del Curso: Estar matriculado en la Fundación",
-                "imagen" => "C:\xampp\htdocs\matriculas\admin\images"
+                "imagen" => "./images/progra1.jpg"
               ],
               [
                 "Nombre" => "Robótica",
@@ -121,7 +121,7 @@
               echo "<p>{$curso['Descripción']}</p>";
               echo "<p>{$curso['Horario']}</p>";
               echo "<p>{$curso['Requisito']}</p>";
-              echo "<img src={$curso['imagen']}";
+              echo "<img src={$curso['imagen']} alt='{$curso['imagen']}'";
               echo "</li>";
             }
             ?>

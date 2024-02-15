@@ -82,35 +82,35 @@
                 "Descripción" => "Descripción: Curso Introductorio sobre programación básica",
                 "Horario" => "Horario: De lunes a Viernes, de 12md a 3pm",
                 "Requisito" => "Requisito del Curso: Estar matriculado en la Fundación",
-                "Imagen" => "./images/programacion.png"
+                "imagen" => "./images/programacion.png"
               ],
               [
                 "Nombre" => "Robótica",
                 "Descripción" => "Descripción: Curso Introductorio sobre robótica",
                 "Horario" => "Horario: De lunes a Viernes, de 1pm a 4pm",
                 "Requisito" => "Requisito del Curso: Tener conocimiento de programación o haber aprobado el curso de Programación",
-                "Imagen" => "./images/robótica.png"
+                "imagen" => "./images/robótica.png"
               ],
               [
                 "Nombre" => "Computación",
                 "Descripción" => "Descripción: Curso de computación donde aprenderemos el funcionamiento de las computadoras",
                 "Horario" => "Horario: De lunes a Viernes, de 8am a 11am",
                 "Requisito" => "Requisito del Curso: Disponibilidad de aprender",
-                "Imagen" => "./images/Computación.png"
+                "imagen" => "./images/Computación.png"
               ],
               [
                 "Nombre" => "Excel Avanzado",
                 "Descripción" => "Descripción: Curso de computación donde aprenderemos el funcionamiento de las computadoras",
                 "Horario" => "Horario: De lunes a Viernes, de 3pm a 6pm",
                 "Requisito" => "Requisito del Curso: Haber aprobado del curso de Excel Básico",
-                "Imagen" => "https://asic.blogs.upv.es/excel-avanzado-importacion-y-analisis-de-datos/150"
+                "imagen" => "https://asic.blogs.upv.es/excel-avanzado-importacion-y-analisis-de-datos/150"
               ],
               [
                 "Nombre" => "Excel Basico",
                 "Descripción" => "Descripción: Curso de computación donde aprenderemos el funcionamiento de las computadoras",
                 "Horario" => "Horario: De lunes a Viernes, de 9am a 12md",
                 "Requisito" => "Requisito del Curso: Saber ¿Que es Excel?",
-                "Imagen" => "https://clicmayores.com/curso/curso-de-excel-basico/150" 
+                "imagen" => "https://www.google.com/url?sa=i&url=https%3A%2F%2Fasic.blogs.upv.es%2Fexcel-avanzado-importacion-y-analisis-de-datos%2F&psig=AOvVaw1nizS4DHFIAihubEphcHCf&ust=1708099476349000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjfsa33rYQDFQAAAAAdAAAAABAE" 
               ],
               //Añade más Cursos Aquí
             ];
@@ -119,9 +119,9 @@
               echo "<li>";
               echo "<h2>{$curso['Nombre']}</h2>";
               echo "<p>{$curso['Descripción']}</p>";
-              echo "<img src='{$curso['Imagen']}' alt='{$curso['nombre']}'>";
               echo "<p>{$curso['Horario']}</p>";
               echo "<p>{$curso['Requisito']}</p>";
+              echo "<img src='{$curso['imagen']}' alt='{$curso['nombre']}'>";
               echo "</li>";
             }
             ?>

@@ -1,45 +1,32 @@
-body {
+body , html{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	}
 
-.container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-	}
 .container1 {
-	max-width: 80%;
+	max-width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	}
+.curso {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.curso img {
+	max-width: 100%;
+	height: auto;
+}
+.curso h2 {
+	margin-top: 10px;
 }
 
-h1 {
-	text-align: center;
-	}
-
-ul {
-	list-style-type: none;
-	padding: 0;
-	}
-
-li {
-	background-color: f4f4f4;
-	padding: 20px;
-	margin-bottom: 20px;
-	border-radius: 10px;
-	}
-
-h2 {
-	margin-top: 0;
-	}
-
-p {
-	margin: 10px 0;
-	}
-
-p strong {
-	font-weight: bold;
-	}
 
 image {
 	max-width: 100%;

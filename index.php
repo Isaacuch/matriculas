@@ -72,64 +72,50 @@
           </form>
             </div>
           </div>
+          //Aquí iria el codigo del notepad
           <div class="container1">
-          <h1 class="text-center">Lista de Cursos Disponibles</h1><br>
-          <ul>
-            <?php
-            //Definir la lista de cursos disponibles con su respectiva información
-            $cursos_disponibles = [
-              [
-                "Nombre" => "Programación",
-                "Descripción" => "Descripción: Curso Introductorio sobre programación básica",
-                "Horario" => "Horario: De lunes a Viernes, de 12md a 3pm",
-                "Requisito" => "Requisito del Curso: Estar matriculado en la Fundación",
-                "imagen" => "./images/progra1.jpg"
-      
-              ],
-              [
-                "Nombre" => "Robótica",
-                "Descripción" => "Descripción: Curso Introductorio sobre robótica",
-                "Horario" => "Horario: De lunes a Viernes, de 1pm a 4pm",
-                "Requisito" => "Requisito del Curso: Tener conocimiento de programación o haber aprobado el curso de Programación",
-                "imagen" => "./images/usuario1.jpg"
-              ],
-              [
-                "Nombre" => "Computación",
-                "Descripción" => "Descripción: Curso de computación donde aprenderemos el funcionamiento de las computadoras",
-                "Horario" => "Horario: De lunes a Viernes, de 8am a 11am",
-                "Requisito" => "Requisito del Curso: Disponibilidad de aprender",
-                "imagen" => "./images/Computación.png"
-              ],
-              [
-                "Nombre" => "Excel Avanzado",
-                "Descripción" => "Descripción: Curso de computación donde aprenderemos el funcionamiento de las computadoras",
-                "Horario" => "Horario: De lunes a Viernes, de 3pm a 6pm",
-                "Requisito" => "Requisito del Curso: Haber aprobado del curso de Excel Básico",
-                "imagen" => "../images/logo1.png"
-              ],
-              [
-                "Nombre" => "Excel Basico",
-                "Descripción" => "Descripción: Curso de computación donde aprenderemos el funcionamiento de las computadoras",
-                "Horario" => "Horario: De lunes a Viernes, de 9am a 12md",
-                "Requisito" => "Requisito del Curso: Saber ¿Que es Excel?",
-                "imagen" => "../images/logo1.png"
-                
-              ],
-              //Añade más Cursos Aquí
-            ];
-            //Mostrar la lista de los cursos diponibles con su información
-            foreach ($cursos_disponibles as $curso) {
-              echo "<li>";
-              echo "<h2>{$curso['Nombre']}</h2>";
-              echo "<p>{$curso['Descripción']}</p>";
-              echo "<p>{$curso['Horario']}</p>";
-              echo "<p>{$curso['Requisito']}</p>";
-              echo "<img src={$curso['imagen']} alt='{$curso['imagen']}'";
-              echo "</li>";
-            }
-            ?>
-            </ul>
-          </div>
+            <div class="Cursos">
+              <h2>Programación</h2>
+              <p>Descripción: Curso Introductorio sobre programación básica</p>
+              <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
+              <p>Requisito: Estar matriculado en la Fundación</p>
+              <img src="admin/images/progra1.jpg" alt="Imagen 1">
+            </div>
+            
+            <div class="Cursos">
+              <h2>Robótica</h2>
+              <p>Descripción: Curso Introductorio sobre programación básica</p>
+              <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
+              <p>Requisito: Estar matriculado en la Fundación</p>
+              <img src="admin/images/progra1.jpg" alt="Imagen 1">
+            </div>
+
+            <div class="Cursos">
+              <h2>Computación</h2>
+              <p>Descripción: Curso Introductorio sobre programación básica</p>
+              <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
+              <p>Requisito: Estar matriculado en la Fundación</p>
+              <img src="admin/images/progra1.jpg" alt="Imagen 1">
+              </div>
+
+            <div class="Cursos">
+              <h2>Excel Basico</h2>
+              <p>Descripción: Curso Introductorio sobre programación básica</p>
+              <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
+              <p>Requisito: Estar matriculado en la Fundación</p>
+              <img src="admin/images/progra1.jpg" alt="Imagen 1">
+            </div>
+            <div class="Cursos">
+              <h2>Excel Avanzado</h2>
+              <p>Descripción: Curso Introductorio sobre programación básica</p>
+              <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
+              <p>Requisito: Estar matriculado en la Fundación</p>
+              <img src="admin/images/progra1.jpg" alt="Imagen 1">
+            </div>
+            <div class="Cursos">
+              
+
+        
 
         <br>
         <?php if (isset($_POST['showinfo'])) {

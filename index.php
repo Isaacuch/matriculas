@@ -103,14 +103,14 @@
                 "Descripción" => "Descripción: Curso de computación donde aprenderemos el funcionamiento de las computadoras",
                 "Horario" => "Horario: De lunes a Viernes, de 3pm a 6pm",
                 "Requisito" => "Requisito del Curso: Haber aprobado del curso de Excel Básico",
-                "imagen" => "https://asic.blogs.upv.es/excel-avanzado-importacion-y-analisis-de-datos/150"
+                "imagen" => "../images/logo1.png"
               ],
               [
                 "Nombre" => "Excel Basico",
                 "Descripción" => "Descripción: Curso de computación donde aprenderemos el funcionamiento de las computadoras",
                 "Horario" => "Horario: De lunes a Viernes, de 9am a 12md",
                 "Requisito" => "Requisito del Curso: Saber ¿Que es Excel?",
-                "imagen" => "" 
+                "imagen" => "./../images/logo1.png" 
               ],
               //Añade más Cursos Aquí
             ];
@@ -121,7 +121,7 @@
               echo "<p>{$curso['Descripción']}</p>";
               echo "<p>{$curso['Horario']}</p>";
               echo "<p>{$curso['Requisito']}</p>";
-              echo "<img src={$curso['imagen']} alt='{$curso['ilustracion']}'";
+              echo "<img src={$curso['imagen']} alt='{$curso['imagen']}'";
               echo "</li>";
             }
             ?>

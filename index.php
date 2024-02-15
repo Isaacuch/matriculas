@@ -72,8 +72,9 @@
           </form>
             </div>
           </div>
+          <ul>
 
-          
+
           <div class="container1">
           <h1 class="text-center">Lista de Cursos Disponibles</h1><br>
           <ul>

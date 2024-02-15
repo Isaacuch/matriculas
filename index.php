@@ -82,7 +82,7 @@
                 "Descripción" => "Descripción: Curso Introductorio sobre programación básica",
                 "Horario" => "Horario: De lunes a Viernes, de 12md a 3pm",
                 "Requisito" => "Requisito del Curso: Estar matriculado en la Fundación",
-                "imagen" => "../images/progra1.jpg"
+                "imagen" => "C:\xampp\htdocs\matriculas\admin\images"
               ],
               [
                 "Nombre" => "Robótica",

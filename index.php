@@ -75,6 +75,7 @@
           //Aquí iria el codigo del notepad
           <div class="container1">
              <h1 class="text-center">Lista de Cursos Disponibles</h1><br>
+
             <div class="Cursos">
               <h2>Programación</h2>
               <p>Descripción: Curso Introductorio sobre programación básica</p>
@@ -106,6 +107,7 @@
               <p>Requisito: Estar matriculado en la Fundación</p>
               //<img src="admin/images/Excel Basico1.jpg" alt="Imagen 1">
             </div>
+
             <div class="Cursos">
               <h2>Excel Avanzado</h2>
               <p>Descripción: Curso Introductorio sobre programación básica</p>
@@ -113,10 +115,6 @@
               <p>Requisito: Estar matriculado en la Fundación</p>
               <img src="admin/images/Excel Avanzado1.jpg" alt="Imagen 1">
             </div>
-            <div class="Cursos">
-              
-
-        
 
         <br>
         <?php if (isset($_POST['showinfo'])) {

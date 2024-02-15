@@ -121,7 +121,7 @@
               echo "<p>{$curso['Descripción']}</p>";
               echo "<p>{$curso['Horario']}</p>";
               echo "<p>{$curso['Requisito']}</p>";
-              echo "<img src='{$curso['imagen']}' alt='{$curso['nombre']}'>";
+              echo "<img src={$curso['imagen']}";
               echo "</li>";
             }
             ?>

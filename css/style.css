@@ -16,7 +16,8 @@ body {
 
 .curso img {
 	max-width: 50%;
-	height: auto;
+	height: 100px;
+	width: 100px;
 	display: block;
 	margin-top: 20px;
 	

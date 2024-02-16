@@ -47,24 +47,15 @@
   }
 
 ?>
-<div class="Container10">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="list-group">
-      <a href="index.php?page=dashboard" class="list-group-item list-group-item-action active">
-      <i  class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
-              </a>
-      </div>
-  </div>
-</div>
-
-
-
-<h1 class="text-primary"><i class="fas fa-user-plus"></i>  Agregar Estudiante<small class="text-warning"> Nuevo Estudiante</small></h1>
+<div class="container">
+<a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
+<h1 class="text-center"> Agregar Estudiante<small class="text-warning"> Nuevo Estudiante</small></h1>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
+    
   <ul>
 </nav>
+</div>
 
 <div class="row">
 	

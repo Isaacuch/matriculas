@@ -51,6 +51,7 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
   <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
+  <ul>
      <li class="breadcrumb-item active" aria-current="page">Agregar Estudiante</li>
   </ol>
 </nav>

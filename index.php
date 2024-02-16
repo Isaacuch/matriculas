@@ -47,19 +47,17 @@
   }
 
 ?>
+
 <div class="container">
 <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
 <h1 class="text-center"> Agregar Estudiante</h1><br>
 <h1<small < class="text-warning"> Nuevo Estudiante</small></h1>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    
   <ul>
 </nav>
-</div>
 
-<div class="row">
-	
+<div class="row">	
 <div class="col-sm-6">
 		<?php if (isset($datainsert)) {?>
 	<div role="alert" aria-live="assertive" aria-atomic="true" class="toast fade" data-autohide="true" data-animation="true" data-delay="2000">

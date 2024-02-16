@@ -47,7 +47,7 @@
   }
 
 ?>
-
+<div class="Supercontainer">
 <div class="container20">
 <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
 <h1 class="text-center"> Agregar Estudiante</h1><br>
@@ -122,6 +122,7 @@
   </div>
 </div>
 </div>
+    </div>
 
           <div class="container1">
           <h1 class="text-center">Lista de Cursos Disponibles</h1><br>

@@ -4,12 +4,18 @@ body {
 	padding: 0;
 	}
 
+.container {
+	text-align: center;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+}
+
 .container1 {
 	text-align: center;
 	max-width: 500px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
 	}
 .curso {
 	text-align: center;

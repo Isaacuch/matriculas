@@ -48,7 +48,7 @@
 
 ?>
 
-      <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
+      <a class="btn btn-primary float-left" href="admin/login.php">Panel Administrativo</a>
           <h1 class="text-center">Sistema de Matrícula de Estudiantes</h1><br>
 
 <h1 class="text-primary"><i class="fas fa-user-plus"></i>  Agregar Estudiante  <small class="text-warning"> Nuevo Estudiante</small></h1>

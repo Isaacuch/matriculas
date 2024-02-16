@@ -63,7 +63,6 @@
 <h1 class="text-primary"><i class="fas fa-user-plus"></i>  Agregar Estudiante<small class="text-warning"> Nuevo Estudiante</small></h1>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-  <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
   <ul>
 </nav>
 

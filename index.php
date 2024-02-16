@@ -44,10 +44,7 @@
   	}
   }
 ?>
-<h1 class="text-primary"><i class="fas fa-user-plus"></i>  Agregar Estudiante<small class="text-warning"> Nuevo Estudiante</small></h1>
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-     <li class="breadcrumb-item" aria-current="page"><a href="index.php">Panel de Control </a></li>
+<h1 class="text-primary"><i class="fas fa-user-plus"></i>  Agregar Estudiante  <small class="text-warning"> Nuevo Estudiante</small></h1>
      <li class="breadcrumb-item active" aria-current="page">Agregar Estudiante</li>
   </ol>
 </nav>
@@ -76,7 +73,7 @@
 	  </div>
 	</div>
 
-  
+
 		<?php } ?>
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">

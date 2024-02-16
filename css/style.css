@@ -8,6 +8,15 @@ body {
 	text-align: center;
 }
 
+
+.container {
+	text-align: center;
+    max-width: 800px;
+    padding: 30px;
+}
+
+
+
 .Container01 {
 	text-align: center;
 }

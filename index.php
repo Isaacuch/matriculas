@@ -47,7 +47,7 @@
   }
 
 ?>
-<div class="container01"><br>
+
       <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
           <h1 class="text-center">Sistema de Matrícula de Estudiantes</h1><br>
 
@@ -119,7 +119,6 @@
       </div>
     </form>
   </div>
-</div>
 </div>
 </div>
 

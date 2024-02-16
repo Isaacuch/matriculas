@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Matrícula de Estudiantes</title>
+     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="Container3">
   <?php 
   $corepage = explode('/', $_SERVER['PHP_SELF']);
     $corepage = end($corepage);
@@ -113,7 +115,7 @@
 	 </form>
 </div>
 </div>
-
+    </div>
 
           <div class="container1">
           <h1 class="text-center">Lista de Cursos Disponibles</h1><br>

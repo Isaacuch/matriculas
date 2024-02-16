@@ -47,9 +47,9 @@
   }
 
 ?>
-  <div class="form-group">
+  <div class="Container01">
 
-  
+
 <h1 class="text-primary"><i class="fas fa-user-plus"></i>  Agregar Estudiante  <small class="text-warning"> Nuevo Estudiante</small></h1>
      <li class="breadcrumb-item active" aria-current="page">Agregar Estudiante</li>
   </ol>
@@ -115,11 +115,12 @@
 	  	</div>
 	  	<div class="form-group text-center">
 		    <input name="addstudent" value="Agregar Estudiante" type="submit" class="btn btn-danger">
-	  	</div>
-	 </form>
+      </div>
+    </form>
+  </div>
 </div>
 </div>
-    </div>
+</div>
 
           <div class="container1">
           <h1 class="text-center">Lista de Cursos Disponibles</h1><br>

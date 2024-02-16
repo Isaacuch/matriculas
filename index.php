@@ -47,6 +47,9 @@
   }
 
 ?>
+  <div class="form-group">
+
+  
 <h1 class="text-primary"><i class="fas fa-user-plus"></i>  Agregar Estudiante  <small class="text-warning"> Nuevo Estudiante</small></h1>
      <li class="breadcrumb-item active" aria-current="page">Agregar Estudiante</li>
   </ol>

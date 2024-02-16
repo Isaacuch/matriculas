@@ -48,7 +48,7 @@
 
 ?>
 
-<div class="container">
+<div class="container20">
 <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
 <h1 class="text-center"> Agregar Estudiante</h1><br>
 <h1<small < class="text-warning"> Nuevo Estudiante</small></h1>

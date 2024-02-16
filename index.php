@@ -47,15 +47,10 @@
   }
 
 ?>
-<i class="fas fa-tachometer-alt"></i> Panel de Control
-              </a>
-              <a href="index.php?page=add-student" class="list-group-item list-group-item-action"><i class="fa fa-user-plus"></i> Agregar Estudiante</a>
-
-
-      <a class="btn btn-primary float-left" href="admin/login.php">Panel Administrativo</a>
-          <h1 class="text-center">Sistema de Matrícula de Estudiantes</h1><br>
-
-<h1 class="text-primary"><i class="fas fa-user-plus"></i>  Agregar Estudiante  <small class="text-warning"> Nuevo Estudiante</small></h1>
+<h1 class="text-primary"><i class="fas fa-user-plus"></i>  Agregar Estudiante<small class="text-warning"> Nuevo Estudiante</small></h1>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+  <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
      <li class="breadcrumb-item active" aria-current="page">Agregar Estudiante</li>
   </ol>
 </nav>

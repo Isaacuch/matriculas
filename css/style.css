@@ -36,7 +36,16 @@ body, html {
 	flex-wrap: wrap;
 	margin-right: -15px;
 	margin-left: -15px;
-	/*justify-content: center;*/
+	justify-content: center;
+}
+
+.form-group row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	text-align: center;
+	align-items: center;
 }
 
 .Container3 {

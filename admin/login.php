@@ -42,7 +42,7 @@ if (isset($_POST['login'])) {
 <!doctype html>
 <html1 lang="en">
 
-<head1>
+<head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -52,9 +52,9 @@ if (isset($_POST['login'])) {
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<title>Acceso Administrativo</title>
-</head1>
+</head>
 
-<body1>
+<body>
 	<div class="Acceso"><br>
 		<h1 class="text-center">Acceso Administrativo</h1>
 		<hr><br>
@@ -63,7 +63,7 @@ if (isset($_POST['login'])) {
 			<?php if (isset($worngpass)) { ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $worngpass; ?></div><?php }; ?>
 			<?php if (isset($status_inactive)) { ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $status_inactive; ?></div><?php }; ?>
 		</div>
-		<div class="text-center">
+
 		<div class="row animate__animated animate__pulse">
 			<div class="col-md-4 offset-md-4">
 				<form method="POST" action="">
@@ -84,9 +84,6 @@ if (isset($_POST['login'])) {
 			</div>
 			</form>
 		</div>
-	</div>
-	</div>
-</div>
 
 
 	<!-- Optional JavaScript -->
@@ -96,6 +93,6 @@ if (isset($_POST['login'])) {
 	<script type="text/javascript">
 		$('.toast').toast('show')
 	</script>
-</body1>
-
+	</div>
+</body>
 </html>

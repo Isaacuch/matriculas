@@ -75,7 +75,7 @@
           <td>'.$result['roll'].'</td>
           <td>'.ucwords($result['sede']).'</td>
           <td>'.$result['pcontact'].'</td>
-          <td>'.ucwords($result['curso']).'</td>
+          <td>'.ucwords($result['class']).'</td>
           <td><img src="images/'.$result['photo'].'" height="50px"></td>
           <td>
             <a class="btn btn-xs btn-warning" href="index.php?page=editstudent&id='.base64_encode($result['id']).'&photo='.base64_encode($result['photo']).'">

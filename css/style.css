@@ -13,14 +13,11 @@ body {
 	align-items: center;
 	}
 
-.muestrapanel {
-width: 50%;
-text-align: center;
-align-items: center;
-}
-
-.container1 {
+.container {
 	text-align: center;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
 }
 
 .Supercontainer{
@@ -28,12 +25,6 @@ align-items: center;
 	max-width: 810px;
 	padding: 30px;
 
-}
-
-.row {
-	text-align: center;
-	justify-content: center;
-	width: 50%;
 }
 
 .container20 {

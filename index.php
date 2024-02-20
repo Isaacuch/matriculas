@@ -82,7 +82,7 @@
 	  </div>
 	</div>
 
-<div class="muestrapanel">
+
 		<?php } ?>
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">
@@ -124,7 +124,6 @@
 </div>
 </div>
     </div>
-      </div>
 
           <div class="container1">
           <h1 class="text-center">Lista de Centros Interativos Disponibles</h1><br>

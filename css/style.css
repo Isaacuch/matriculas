@@ -14,7 +14,11 @@ body, html {
 	align-items: center;
 }
 
-
+.cold-md-4 offet-md-4 {
+	text-align: center;
+	justify-content: center;
+	height: 80%;
+}
 
 .Acceso {
 	align-items: center;

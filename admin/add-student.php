@@ -75,7 +75,7 @@
 	  	</div>
 	  	<div class="form-group">
 		    <label for="pcontact">Teléfono de Contacto</label>
-		    <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-9]{10}" value="<?= isset($pcontact)? $pcontact: '' ; ?>" placeholder="+57........." required="">
+		    <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-8]{8}" value="<?= isset($pcontact)? $pcontact: '' ; ?>" placeholder="+506........" required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="class">Centros interactivos para matricular</label>

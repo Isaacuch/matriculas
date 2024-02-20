@@ -71,7 +71,7 @@
 
 		  <div class="form-group">
 		    <label for="class">Sede del Estudiante</label>
-		    <select name="class" class="form-control" id="sede" required="" value="">
+		    <select name="sede" class="form-control" id="sede" required="" value="">
 		    	<option>Select</option>
 		    	<option value="Primero" <?= $row['sede']=='Primero'? 'selected':'' ?>>Concepción, Alajuelita</option>
 		    	<option value="Segundo" <?= $row['sede']=='Segundo'? 'selected':'' ?>>25 de Julio, Hatillo</option>

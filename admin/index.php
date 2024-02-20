@@ -31,7 +31,7 @@ if (!isset($_SESSION['user_login'])) {
   </head>
   <body>
 
-  <div class="separador"></div> <!-- Línea de separación -->
+  
 <nav class="navbar navbar-expand-lg navbar-white grey bg-white grey">
   <div id="logo-container ">
     <img id="Logo" src="./images/logo1.png" alt="Logo de la empresa">
@@ -40,6 +40,7 @@ if (!isset($_SESSION['user_login'])) {
     <span class="navbar-toggler-icon"></span>
   </button>
 
+  <div class="separador"></div> <!-- Línea de separación -->
   <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
     <?php $showuser = $_SESSION['user_login']; $haha = mysqli_query($db_con,"SELECT * FROM `users` WHERE `username`='$showuser';"); $showrow=mysqli_fetch_array($haha); ?>
     <ul class="nav navbar-nav ">

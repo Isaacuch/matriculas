@@ -63,18 +63,21 @@ body {
 }
 
 h1 {
+	font-family: Open Sans, sans-serif;
 	text-align: center;
     padding: 10px 20px 20;
     margin-top: 10px;
 }
 
 h2 {
+	font-family: Open Sans, sans-serif;
 	text-align: center;
     padding: 10px 20px 20;
     margin-top: 10px;
 }
 
 h3 {
+	font-family: Open Sans, sans-serif;
 	text-align: center;
 	padding: 10px 20px 20;
 	margin-top: 10px;

@@ -14,6 +14,13 @@ body, html {
 	align-items: center;
 }
 
+.Acceso {
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
 .container1 {
 	text-align: center;
 }

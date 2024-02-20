@@ -82,8 +82,8 @@
 	  </div>
 	</div>
 
-
-		<?php } ?>
+  <div class="Muestrapanel">
+  <?php } ?>
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">
 		    <label for="name">Nombre de Estudiante</label>
@@ -124,7 +124,7 @@
 </div>
 </div>
     </div>
-
+  </div>
           <div class="container1">
           <h1 class="text-center">Lista de Centros Interativos Disponibles</h1><br>
           <ul>

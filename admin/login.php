@@ -40,9 +40,9 @@ if (isset($_POST['login'])) {
 }
 ?>
 <!doctype html>
-<html lang="en">
+<html1 lang="en">
 
-<head>
+<head1>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -52,9 +52,9 @@ if (isset($_POST['login'])) {
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<title>Acceso Administrativo</title>
-</head>
+</head1>
 
-<body>
+<body1>
 	<div class="Acceso"><br>
 		<h1 class="text-center">Acceso Administrativo</h1>
 		<hr><br>
@@ -96,6 +96,6 @@ if (isset($_POST['login'])) {
 	<script type="text/javascript">
 		$('.toast').toast('show')
 	</script>
-</body>
+</body1>
 
 </html>

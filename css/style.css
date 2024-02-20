@@ -26,6 +26,14 @@ body {
 
 }
 
+.Muestrapanel {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	max-width: 800px;
+	padding: 30px;
+}
+
 .container20 {
 	text-align: center;
 	justify-content: center;

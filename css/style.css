@@ -158,6 +158,12 @@ img.showimg{
 	width: 40px;
 }
 
+.form-group {
+	text-align: center;
+	max-width: 800px;
+	padding: 30px;
+}
+
 .btn-custom {
 	background-color: #EEEEEE;
 	color: #000;

@@ -18,6 +18,13 @@ body, html {
 	text-align: center;
 }
 
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	justify-content: center;
+}
 
 .Container3 {
 	width: 80%;
@@ -150,6 +157,7 @@ img.showimg {
 
 .form-group {
 	margin-top: 20px;
+	text-align: center;
 }
 
 .btn-custom {

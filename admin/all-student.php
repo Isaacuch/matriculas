@@ -58,6 +58,7 @@
       <th scope="col">Matrícula</th>
       <th scope="col">Sede</th>
       <th scope="col">Contacto</th>
+      <th scope="col">Curso</th>
       <th scope="col">Fotografía</th>
       <th scope="col">Acción</th>
     </tr>
@@ -74,6 +75,7 @@
           <td>'.$result['roll'].'</td>
           <td>'.ucwords($result['sede']).'</td>
           <td>'.$result['pcontact'].'</td>
+          <td>'.ucwords($result['curso']).'</td>
           <td><img src="images/'.$result['photo'].'" height="50px"></td>
           <td>
             <a class="btn btn-xs btn-warning" href="index.php?page=editstudent&id='.base64_encode($result['id']).'&photo='.base64_encode($result['photo']).'">

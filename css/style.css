@@ -153,3 +153,12 @@ img.showimg{
 	width: 40px;
 }
 
+.text-center {
+	font-family: Open Sans, sans-serif;
+	padding: 10px 20px 20;
+	margin-top: 10px;
+	text-align: center;
+	border-bottom-color: #ff6900;
+	color: #000;
+}
+

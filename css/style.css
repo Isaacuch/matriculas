@@ -13,13 +13,6 @@ body {
 	align-items: center;
 	}
 
-.container {
-	text-align: center;
-	max-width: 500px;
-	display: flex;
-	flex-direction: column;
-}
-
 .Supercontainer{
 	text-align: center;
 	max-width: 810px;

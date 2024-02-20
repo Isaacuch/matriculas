@@ -63,6 +63,7 @@ if (isset($_POST['login'])) {
 			<?php if (isset($worngpass)) { ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $worngpass; ?></div><?php }; ?>
 			<?php if (isset($status_inactive)) { ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $status_inactive; ?></div><?php }; ?>
 		</div>
+		<div class="text-center">
 		<div class="row animate__animated animate__pulse">
 			<div class="col-md-4 offset-md-4">
 				<form method="POST" action="">
@@ -85,6 +86,7 @@ if (isset($_POST['login'])) {
 		</div>
 	</div>
 	</div>
+</div>
 
 
 	<!-- Optional JavaScript -->

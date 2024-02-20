@@ -125,7 +125,7 @@
     </div>
 
           <div class="container1">
-          <h1 class="text-center">Lista de Cursos Disponibles</h1><br>
+          <h1 class="text-center">Lista de Centros Interativos Disponibles</h1><br>
           <ul>
             <div class="Cursos">
               <h2>Programación</h2>

@@ -74,7 +74,12 @@ h2 {
     margin-top: 10px;
 }
 
-
+h3 {
+	text-align: center;
+	padding: 10px 20px 20;
+	margin-top: 10px;
+	color: #ff6900;
+}
 
 
 image {

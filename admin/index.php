@@ -31,8 +31,7 @@ if (!isset($_SESSION['user_login'])) {
   </head>
   <body>
 
-  
-<nav class="list-group-item list-group-item-action active">
+  <nav class="navbar navbar-expand-lg navbar-white grey bg-white grey">
   <div id="logo-container ">
     <img id="Logo" src="./images/logo1.png" alt="Logo de la empresa">
   </div>

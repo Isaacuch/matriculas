@@ -11,11 +11,17 @@ body {
 	padding: 0;
 	}
 
-.Container10 {
+.form-group {
 	text-align: center;
-	padding: 30px;
+}
+
+.muestra1 {
+	text-align: center;
+	width: 0;
+	left: 0;
 
 }
+
 .container1 {
 	text-align: center;
 }

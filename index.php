@@ -83,7 +83,7 @@
 
 
 		<?php } ?>
-    <div class="Container10">
+    <div class="muestra1">
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">
 		    <label for="name">Nombre de Estudiante</label>
@@ -121,7 +121,6 @@
       </div>
     </form>
   </div>
-</div>
 </div>
 </div>
     </div>

@@ -1,10 +1,4 @@
 <?php 
-
-if (!isset($_COOKIE['auth_token'])) {
-    header('Location: login.php'); // Redirigir al usuario a la página de inicio de sesión si no está autenticado
-    exit();
-}
-
   $corepage = explode('/', $_SERVER['PHP_SELF']);
     $corepage = end($corepage);
     if ($corepage!=='index.php') {
@@ -34,7 +28,7 @@ if (!isset($_COOKIE['auth_token'])) {
   	}
   	
 
-  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`sede`='$address',`pcontact`='$pcontact',`photo`='$photo' WHERE `id`= $id";
+  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`city`='$address',`pcontact`='$pcontact',`photo`='$photo' WHERE `id`= $id";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Student Updated!</p>';
 		if (!empty($_FILES['photo']['name'])) {
@@ -76,21 +70,21 @@ if (!isset($_COOKIE['auth_token'])) {
 	  	</div>
 	  	<div class="form-group">
 		    <label for="address">Sede del Estudiante</label>
-		    <input name="address" type="text" class="form-control" id="address" value="<?php echo $row['sede']; ?>" required="">
+		    <input name="address" type="text" class="form-control" id="address" value="<?php echo $row['city']; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="pcontact">Número de Contacto</label>
 		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="[0-9]{10}" placeholder="+57..." required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="class">Matricula del curso</label>
+		    <label for="class">Matricula del Curso interactivo</label>
 		    <select name="class" class="form-control" id="class" required="" value="">
 		    	<option>Select</option>
-		    	<option value="Primero" <?= $row['class']=='Computación'? 'selected':'' ?>>Computación</option>
-		    	<option value="Segundo" <?= $row['class']=='Robótica'? 'selected':'' ?>>Robótica</option>
-		    	<option value="Tercero" <?= $row['class']=='Programación'? 'selected':'' ?>>Programación</option>
-		    	<option value="Cuarto" <?= $row['class']=='Excel Basico'? 'selected':'' ?>>Excel Basico</option>
-		    	<option value="Quinto" <?= $row['class']=='Excel Avanzado'? 'selected':'' ?>>Excel Avanzado</option>
+		    	<option value="Primero" <?= $row['class']=='Primero'? 'selected':'' ?>>Computación</option>
+		    	<option value="Segundo" <?= $row['class']=='Segundo'? 'selected':'' ?>>Robótica</option>
+		    	<option value="Tercero" <?= $row['class']=='Tercero'? 'selected':'' ?>>Programación</option>
+		    	<option value="Cuarto" <?= $row['class']=='Cuarto'? 'selected':'' ?>>Excel Basico</option>
+		    	<option value="Quinto" <?= $row['class']=='Quinto'? 'selected':'' ?>>Excel Avanzado</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">

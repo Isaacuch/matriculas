@@ -72,7 +72,7 @@
         echo '<td>'.$i.'</td>
           <td>'.ucwords($result['name']).'</td>
           <td>'.$result['roll'].'</td>
-          <td>'.ucwords($result['sede']).'</td>
+          <td>'.ucwords($result['city']).'</td>
           <td>'.$result['pcontact'].'</td>
           <td><img src="images/'.$result['photo'].'" height="50px"></td>
           <td>

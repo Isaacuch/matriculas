@@ -1,5 +1,12 @@
 body {
-	font-family: Arial, sans-serif;
+	font-family: Open Sans, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	color: #888;
+	font-weight: 400;
+	background-color: #fff;
+	overflow-x: hidden!important;
+	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
 	}
@@ -116,8 +123,8 @@ height: auto;
 }
 
 footer{
-	background:#FF6900;
-		color: #000;;
+	background:#007BFF;
+		color: #ffffff;
 		padding: 20px 0px 5px 5px;
 		margin-top: 20px;
 }

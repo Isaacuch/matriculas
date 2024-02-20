@@ -27,9 +27,9 @@ body {
 }
 
 .Muestrapanel {
-	text-align: right;
-	justify-content:right;
-	align-items: right;
+	text-align: Center;
+	justify-content:center;
+	align-items: center;
 	max-width: 800px;
 	padding: 30px;
 }

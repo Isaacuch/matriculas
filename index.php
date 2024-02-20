@@ -59,6 +59,9 @@
 </div>
 
 
+<div class="Muestrapanel">
+
+
 <div class="row">	
 <div class="col-sm-6">
 		<?php if (isset($datainsert)) {?>
@@ -82,7 +85,7 @@
 	  </div>
 	</div>
 
-  <div class="Muestrapanel">
+ 
   <?php } ?>
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">

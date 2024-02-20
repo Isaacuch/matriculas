@@ -70,7 +70,7 @@
 	  	</div>
 	  	<div class="form-group">
 		    <label for="address">Sede del Estudiante</label>
-		    <input name="address" type="text" class="form-control" id="address" value="<?php echo $row['city']; ?>" required="">
+		    <input name="address" type="text" class="form-control" id="address" value="<?php echo $row['sede']; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="pcontact">Número de Contacto</label>

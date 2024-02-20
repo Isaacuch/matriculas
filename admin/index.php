@@ -31,10 +31,10 @@ if (!isset($_SESSION['user_login'])) {
   </head>
   <body>
 
+  <div class="separador"></div> <!-- Línea de separación -->
 <nav class="navbar navbar-expand-lg navbar-white grey bg-white grey">
   <div id="logo-container ">
     <img id="Logo" src="./images/logo1.png" alt="Logo de la empresa">
-    <li --------------------------------------------------------------->
   </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

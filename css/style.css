@@ -4,6 +4,11 @@ body {
 	padding: 0;
 	}
 
+	.separador {
+		border-top: 1px solid #FF6900;
+		margin-top: 20px;
+	}
+
 .container1 {
 	text-align: center;
 }

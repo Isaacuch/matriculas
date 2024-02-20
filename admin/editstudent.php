@@ -28,7 +28,7 @@
   	}
   	
 
-  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`city`='$address',`pcontact`='$pcontact',`photo`='$photo' WHERE `id`= $id";
+  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`sede`='$address',`pcontact`='$pcontact',`photo`='$photo' WHERE `id`= $id";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Student Updated!</p>';
 		if (!empty($_FILES['photo']['name'])) {

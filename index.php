@@ -51,7 +51,7 @@
 <div class="container20">
 <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
 <h1 class="text-center"> Matriculas de Estudiante</h1><br>
-<h1<small class="text-warning"> Agregar Estudiantes</small></h1>
+<h2<small class="text-warning"> Agregar Estudiantes</small></h2>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
   <ul>

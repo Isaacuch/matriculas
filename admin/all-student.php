@@ -51,7 +51,7 @@
   </div>
     <?php } ?>
 <table class="table  table-striped table-hover table-bordered" id="data">
-  <thead class="thead-white">
+  <thead class="thead-dark">
     <tr>
       <th scope="col">SL</th>
       <th scope="col">Nombre</th>

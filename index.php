@@ -58,6 +58,7 @@
 </nav>
 </div>
 
+
 <div class="row">	
 <div class="col-sm-6">
 		<?php if (isset($datainsert)) {?>

@@ -74,7 +74,7 @@
 	  	</div>
 	  	<div class="form-group">
 		    <label for="pcontact">Número de Contacto</label>
-		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="[0-9]{10}" placeholder="+57..." required="">
+		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="[0-9]{10}" placeholder="+506..." required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="class">Matricula del Curso interactivo</label>

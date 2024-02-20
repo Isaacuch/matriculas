@@ -38,7 +38,7 @@
         }
         if (isset($_GET['edit'])) {
           if ($_GET['edit']=='success') {
-            echo "<p style='color: green; font-weight: bold; '>Estudiante eliminado exitósamente</p>";
+            echo "<p style='color: green; font-weight: bold; '>Estudiante editado exitósamente</p>";
           }  
         }
         if (isset($_GET['edit'])) {

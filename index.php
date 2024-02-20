@@ -60,7 +60,7 @@
         </nav>
 
 
-      <div class="row">
+      <div class="row1">
         <div class="col-sm-6">
           <?php if (isset($datainsert)) { ?>
             <div role="alert" aria-live="assertive" aria-atomic="true" class="toast fade" data-autohide="true" data-animation="true" data-delay="2000">

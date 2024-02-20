@@ -36,17 +36,17 @@ body, html {
 	flex-wrap: wrap;
 	margin-right: -15px;
 	margin-left: -15px;
-	justify-content: center;
+	text-align: center;
 }
 
-.form-group row {
+.row1 {
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: -15px;
 	margin-left: -15px;
-	text-align: center;
-	align-items: center;
+	justify-content: center;
 }
+
 
 .Container3 {
 	width: 100%;

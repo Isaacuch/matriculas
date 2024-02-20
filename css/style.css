@@ -153,12 +153,18 @@ img.showimg{
 	width: 40px;
 }
 
-.text-center {
-	font-family: Open Sans, sans-serif;
-	padding: 10px 20px 20;
-	margin-top: 10px;
-	text-align: center;
-	border-bottom-color: #ff6900;
+.btn-custom {
+	background-color: #EEEEEE;
 	color: #000;
+	font-size: 14px;
+	padding: 0;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.btn-custom:hover {
+	background-color: ;
 }
 

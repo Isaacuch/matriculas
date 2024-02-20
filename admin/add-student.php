@@ -69,10 +69,18 @@
 		    <label for="roll">Número de Matrícula</label>
 		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{6}" id="roll" required="">
 	  	</div>
-	  	<div class="form-group">
-		    <label for="address">Sede del Estudiante</label>
-		    <input name="address" type="text" value="<?= isset($address)? $address: '' ; ?>" class="form-control" id="address" required="">
+		
+	  	
+		<div class="form-group">
+		    <label for="sede">Sede del Estudiante</label>
+		    <select name="sede" class="form-control" id="sede" required="">
+		    	<option>Selecciona</option>
+		    	<option value="Concepción, Alajuelita">Concepción, Alajuelita</option>
+		    	<option value="25 de Julio, Hatillo">25 de Julio, Hatillo</option>
+		    	<option value="Linda Vista, Patarrá">Linda Vista, Patarrá</option>
+		    </select>
 	  	</div>
+
 	  	<div class="form-group">
 		    <label for="pcontact">Teléfono de Contacto</label>
 		    <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-8]{8}" value="<?= isset($pcontact)? $pcontact: '' ; ?>" placeholder="+506........" required="">

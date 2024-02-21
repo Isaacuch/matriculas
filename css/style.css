@@ -197,6 +197,10 @@ img.showimg {
 	background-color: #fcb900;
 }
 
+.bg-info {
+	background-color: #51B82D!important;
+}
+
 .btn-danger {
 	color: #fff;
 	background-color: #cf2e2e;

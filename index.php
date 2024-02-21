@@ -40,7 +40,7 @@
       $photo = end($photo);
       $photo = $roll . date('Y-m-d-m-s') . '.' . $photo;
 
-      $query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `sede`, `pcontact`, `photo`) VALUES ('$name', '$roll', '$class', '$address', '$pcontact','$photo');";
+      $query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `sede`, `pcontact`, `photo`) VALUES ('$name', '$roll', '$class', '$sede', '$pcontact','$photo');";
       if (mysqli_query($db_con, $query)) {
         $datainsert['insertsucess'] = '<p style="color: green;">Estudiante Ingresado Exitosamente</p>';
         move_uploaded_file($_FILES['photo']['tmp_name'], 'admin/images/' . $photo);
@@ -96,7 +96,7 @@
             </div>
 
             <div class="form-group">
-              <label for="class">Sede del Estudiante</label>
+              <label for="sede">Sede del Estudiante</label>
               <select name="sede" class="form-control" id="sede" required="">
                 <option>Selecciona</option>
                 <option value="Primero">Concepción, Alajuelita</option>

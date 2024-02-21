@@ -82,6 +82,15 @@ if (!isset($_SESSION['user_login'])) {
         </div>
         </div>  
     </div>
+    <div class="container1">
+    <h1 class="text-center">Síguenos en nuestras Redes Sociales</h1><br>
+    <ul>
+    <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>
+    <li><a href="https://www.facebook.com/fundavida.org" target="_blank"> Facebook</a></li>
+    <li><a href="https://www.youtube.com/@FundaVidaCR" target="_blank"> YouTube</a></li>
+  </ul>
+</div>
+
     <div class="clearfix"></div>
     
       <br><br><br><br><br><br><br><br><br><br><br><br>

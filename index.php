@@ -127,7 +127,8 @@
             <div class="form-group text-center">
               <input name="addstudent" value="Agregar Estudiante" type="submit" class="btn btn-danger">
             </div>
-            <h3 class="text-warning"> Atención, verifique la información. Ingese al estudiante solo una vez! </h3>
+            <h3 class="text-warning"> Atención, verifique la información.
+               Ingrese solo una vez al estudiante! </h3>
           </form>
         </div>
       </div>

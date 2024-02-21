@@ -152,7 +152,7 @@
           <p>Descripción: Curso Introductorio sobre programación básica</p>
           <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
           <p>Requisito: Estar matriculado en la Fundación</p>
-          <img src="admin/images/robo2.jpg" alt="Imagen 2">
+          <img src="admin/images/robo1.jpg" alt="Imagen 2">
         </div>
         <ul>
 

@@ -66,7 +66,7 @@
 	  	</div>
 	  	<div class="form-group">
 		    <label for="roll">Número de Matrícula</label>
-		    <input name="roll" type="text" class="form-control" pattern="[0-9]{3}" id="roll" value="<?php echo $row['roll']; ?>" required="">
+		    <input name="roll" type="text" class="form-control" pattern="[0-9]{6}" id="roll" value="<?php echo $row['roll']; ?>" required="">
 	  	</div>
 
 		  <div class="form-group">

@@ -67,7 +67,7 @@
 	  	</div>
 	  	<div class="form-group">
 		    <label for="roll">Número de Matrícula</label>
-		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{3}" id="roll" required="">
+		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{6}" id="roll" required="">
 	  	</div>
 		
 	  	

@@ -88,12 +88,11 @@ if (!isset($_SESSION['user_login'])) {
     <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>
     <li><a href="https://www.facebook.com/fundavida.org" target="_blank"> Facebook</a></li>
     <li><a href="https://www.youtube.com/@FundaVidaCR" target="_blank"> YouTube</a></li>
+    <li><a href="https://api.whatsapp.com/send/?phone=%2B50688708991&text&type=phone_number&app_absent=0" target="_blank">Comuníquese con nosotros!, whatsapp</a></li>
   </ul>
 </div>
-
     <div class="clearfix"></div>
-    
-      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br>
       <center><h2>Para más información ingresar al sitio Oficial de la Fundación <a href="https://www.fundavida.org/pagina-principal/">FundaVida</a></h2></center>
       
     

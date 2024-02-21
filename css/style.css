@@ -218,17 +218,3 @@ img.showimg {
 	background-color: #fcb900;
 	border-color: #fcb900;
 }
-
-.MuestraRedesSociales {
-text-align: center;
-justify-content: center;
-}
-
-
-h4 {
-	font-size: 1.5rem;
-    background-color: salmon;
-    color: orangered;
-    text-align: center;
-    padding: 15px;
-}

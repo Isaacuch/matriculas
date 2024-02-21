@@ -246,7 +246,7 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-  <div class="MuestraRedesSociales">
+  <div class="container1">
     <h1 class="text-center">Síguenos en nuestras Redes Sociales</h1><br>
     <ul>
     <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>

@@ -82,6 +82,7 @@ if (!isset($_SESSION['user_login'])) {
         </div>
         </div>  
     </div>
+    <br><br>
     <div class="container1">
     <h1 class="text-center">Síguenos en nuestras Redes Sociales</h1><br>
     <ul>

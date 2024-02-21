@@ -55,7 +55,7 @@
     <tr>
       <th scope="col">SL</th>
       <th scope="col">Nombre</th>
-      <th scope="col">Matrícula</th>
+      <th scope="col">Cédula</th>
       <th scope="col">Sede</th>
       <th scope="col">Contacto</th>
       <th scope="col">Curso</th>

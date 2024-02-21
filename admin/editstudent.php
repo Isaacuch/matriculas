@@ -65,8 +65,8 @@
 		    <input name="name" type="text" class="form-control" id="name" value="<?php echo $row['name']; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="roll">Número de Matrícula</label>
-		    <input name="roll" type="text" class="form-control" pattern="[0-9]{6}" id="roll" value="<?php echo $row['roll']; ?>" required="">
+		    <label for="roll">Número de Cédula</label>
+		    <input name="roll" type="text" class="form-control" pattern="[0-9]{9}" id="roll" value="<?php echo $row['roll']; ?>" required="">
 	  	</div>
 
 		  <div class="form-group">

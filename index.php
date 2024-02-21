@@ -91,8 +91,8 @@
               <input name="name" type="text" class="form-control" id="name" value="<?= isset($name) ? $name : ''; ?>" required="">
             </div>
             <div class="form-group">
-              <label for="roll">Número de Matrícula</label>
-              <input name="roll" type="text" value="<?= isset($roll) ? $roll : ''; ?>" class="form-control" pattern="[0-9]{6}" id="roll" required="">
+              <label for="roll">Número de Cédula</label>
+              <input name="roll" type="text" value="<?= isset($roll) ? $roll : ''; ?>" class="form-control" pattern="[0-9]{9}" id="roll" required="">
             </div>
 
             <div class="form-group">

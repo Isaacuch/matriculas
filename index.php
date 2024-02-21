@@ -99,9 +99,9 @@
               <label for="class">Sede del Estudiante</label>
               <select name="sede" class="form-control" id="sede" required="">
                 <option>Selecciona</option>
-                <option value="Concepcion, Alajuelita">Concepción, Alajuelita</option>
-                <option value="25 de Julio, Hatillo">25 de Julio, Hatillo</option>
-                <option value="Linda Vista, Patarra">Linda Vista, Patarrá</option>
+                <option value="Primero">Concepción, Alajuelita</option>
+                <option value="segundo">25 de Julio, Hatillo</option>
+                <option value="Tercero">Linda Vista, Patarrá</option>
               </select>
             </div>
            

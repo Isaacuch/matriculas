@@ -57,6 +57,9 @@ body, html {
 	text-align: center;
 }
 
+.nav-item1 {
+	background-color: #cf2e2e;
+}
 
 .form-control {
 	margin-bottom: 10px;

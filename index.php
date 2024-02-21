@@ -241,21 +241,22 @@
                 }; ?>
   </div>
 
-  <div class="MediosComunicación">
-  <h4>Síguenos en nuestras redes sociales:</h4>
-  <ul>
-    <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"><img src="instagram_logo.png" alt="Instagram"> Instagram</a></li>
-    <li><a href="https://www.facebook.com/fundavida.org" target="_blank"><img src="facebook_logo.png" alt="Facebook"> Facebook</a></li>
-    <li><a href="https://www.youtube.com/@FundaVidaCR" target="_blank"><img src="youtube_logo.png" alt="YouTube"> YouTube</a></li>
-  </ul>
-</div>
-
-
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+
+
+  <div class="MediosComunicación">
+  <h4>Síguenos en nuestras redes sociales:</h4>
+  <ul>
+    <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>
+    <li><a href="https://www.facebook.com/fundavida.org" target="_blank"> Facebook</a></li>
+    <li><a href="https://www.youtube.com/@FundaVidaCR" target="_blank"> YouTube</a></li>
+  </ul>
+</div>
+
 </body>
 
 </html>

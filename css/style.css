@@ -58,7 +58,8 @@ body, html {
 }
 
 .nav-item1 {
-	background-color: #cf2e2e;
+	background-color: white;
+	color: #cf2e2e ;
 }
 
 .form-control {

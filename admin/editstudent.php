@@ -70,12 +70,12 @@
 	  	</div>
 
 		  <div class="form-group">
-		    <label for="class">Sede del Estudiante</label>
+		    <label for="sede">Sede del Estudiante</label>
 		    <select name="sede" class="form-control" id="sede" required="" value="">
 		    	<option>Select</option>
-		    	<option value="Primero" <?= $row['sede']=='Primero'? 'selected':'' ?>>Concepción, Alajuelita</option>
-		    	<option value="Segundo" <?= $row['sede']=='Segundo'? 'selected':'' ?>>25 de Julio, Hatillo</option>
-		    	<option value="Tercero" <?= $row['sede']=='Tercero'? 'selected':'' ?>>Linda Vista, Patarrá</option>
+		    	<option value="Concepción, Alajuelita" <?= $row['sede']=='Concepción, Alajuelita'? 'selected':'' ?>>Concepción, Alajuelita</option>
+		    	<option value="25 de Julio, Hatillo" <?= $row['sede']=='25 de Julio, Hatillo'? 'selected':'' ?>>25 de Julio, Hatillo</option>
+		    	<option value="Linda Vista, Patarrá" <?= $row['sede']=='Linda Vista, Patarrá'? 'selected':'' ?>>Linda Vista, Patarrá</option>
 		    </select>
 	  	</div>
 	  	
@@ -88,10 +88,10 @@
 		    <select name="class" class="form-control" id="class" required="" value="">
 		    	<option>Select</option>
 		    	<option value="Computación" <?= $row['class']=='Computación'? 'selected':'' ?>>Computación</option>
-		    	<option value="Segundo" <?= $row['class']=='Segundo'? 'selected':'' ?>>Robótica</option>
-		    	<option value="Tercero" <?= $row['class']=='Tercero'? 'selected':'' ?>>Programación</option>
-		    	<option value="Cuarto" <?= $row['class']=='Cuarto'? 'selected':'' ?>>Excel Basico</option>
-		    	<option value="Quinto" <?= $row['class']=='Quinto'? 'selected':'' ?>>Excel Avanzado</option>
+		    	<option value="Robótica" <?= $row['class']=='Robótica'? 'selected':'' ?>>Robótica</option>
+		    	<option value="Programación" <?= $row['class']=='Programación'? 'selected':'' ?>>Programación</option>
+		    	<option value="Excel Basico" <?= $row['class']=='Excel Basico'? 'selected':'' ?>>Excel Basico</option>
+		    	<option value="Excel Avanzado" <?= $row['class']=='Excel Avanzado'? 'selected':'' ?>>Excel Avanzado</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">

@@ -12,14 +12,15 @@
   	$name = $_POST['name'];
   	$roll = $_POST['roll'];
   	$address = $_POST['sede'];
+	  $class = $_POST['class'];
   	$pcontact = $_POST['pcontact'];
-  	$class = $_POST['class'];
+  	
   	
   	$photo = explode('.', $_FILES['photo']['name']);
   	$photo = end($photo); 
   	$photo = $roll.date('Y-m-d-m-s').'.'.$photo;
 
-  	$query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `sede`, `pcontact`, `photo`) VALUES ('$name', '$roll', '$class', '$sede', '$pcontact','$photo');";
+  	$query = "INSERT INTO `student_info`(`name`, `roll`, `sede`, `class`, `pcontact`, `photo`) VALUES ('$name', '$roll', '$sede', '$class', '$pcontact','$photo');";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Estudiante Ingresado Exitosamente</p>';
   		move_uploaded_file($_FILES['photo']['tmp_name'], 'images/'.$photo);

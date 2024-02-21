@@ -152,7 +152,7 @@
           <p>Descripción: Curso Introductorio sobre programación básica</p>
           <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
           <p>Requisito: Estar matriculado en la Fundación</p>
-          <img src="admin/images/robo1.jpg" alt="Imagen 2">
+          <img src="admin/images/R0.png" alt="Imagen 2">
         </div>
         <ul>
 
@@ -179,7 +179,7 @@
                 <p>Descripción: Curso Introductorio sobre programación básica</p>
                 <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
                 <p>Requisito: Estar matriculado en la Fundación</p>
-                <img src="admin/images/Excel Avanzado1.jpg" alt="Imagen 5">
+                <img src="admin/images/EA0.png" alt="Imagen 5">
               </div>
               <ul>
 

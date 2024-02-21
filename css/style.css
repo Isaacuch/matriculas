@@ -212,3 +212,17 @@ img.showimg {
 	background-color: #fcb900;
 	border-color: #fcb900;
 }
+
+.MediosComunicación {
+	text-align: center;
+	margin: 0 auto;
+
+}
+
+h4 {
+	font-family: Open Sans, sans-serif;
+	text-align: center;
+	padding: 10px 20px 20;
+	margin-top: 10px;
+	color: #ff6900;
+}

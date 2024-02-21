@@ -240,12 +240,15 @@
                 <?php }
                 }; ?>
   </div>
-  <h1>Síguenos en nuestras redes sociales:</h1>
+
+  <div class="MediosComunicación">
+  <h4>Síguenos en nuestras redes sociales:</h4>
 <ul>
-    <li><a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank">Instagram</a></li>
-    <li><a href="https://www.facebook.com/tu_pagina_de_facebook" target="_blank">Facebook</a></li>
-    <li><a href="https://www.youtube.com/tu_canal_de_youtube" target="_blank">YouTube</a></li>
-</ul>
+    <li><a href="https://www.instagram.com/fundavidacr/" target="_blank">Instagram</a></li>
+    <li><a href="https://www.facebook.com/fundavida.org" target="_blank">Facebook</a></li>
+    <li><a href="https://www.youtube.com/@FundaVidaCR" target="_blank">YouTube</a></li>
+  </ul>
+</div>
 
 
 

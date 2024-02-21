@@ -128,7 +128,6 @@
           <td>'.ucwords($result['name']).'</td>
           <td>'.$result['roll'].'</td>
           <td>'.ucwords($result['sede']).'</td>
-          <td>'.$result['class'].'</td>
           <td>'.$result['pcontact'].'</td>
           <td><img src="images/'.$result['photo'].'" height="50px"></td>';?>
       </tr>  

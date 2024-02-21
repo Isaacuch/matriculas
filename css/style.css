@@ -220,14 +220,15 @@ img.showimg {
 }
 
 .MuestraRedesSociales {
-	
+text-align: center;
+justify-content: center;
 }
 
 
 h4 {
 	font-size: 1.5rem;
-    text-align: center;
     background-color: salmon;
-	padding: 10px;
-	justify-content: center;
+    color: orangered;
+    text-align: center;
+    padding: 15px;
 }

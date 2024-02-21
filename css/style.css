@@ -220,9 +220,8 @@ img.showimg {
 }
 
 h4 {
-	font-family: Open Sans, sans-serif;
-	text-align: center;
-	padding: 10px 20px 20;
-	margin-top: 10px;
-	color: #ff6900;
+	font-size: 1.5rem;
+    text-align: center;
+    background-color: salmon;
+	padding: 10px;
 }

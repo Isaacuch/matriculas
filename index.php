@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Matrícula de Estudiantes</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -246,8 +246,8 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-
-  <h1>Síguenos en nuestras redes sociales:</h1>
+<div class="MuestraRedesSociales">
+  <h4>Síguenos en nuestras redes sociales:</h4>
   <ul>
     <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>
     <li><a href="https://www.facebook.com/fundavida.org" target="_blank"> Facebook</a></li>

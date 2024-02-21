@@ -74,8 +74,8 @@
 		    <select name="sede" class="form-control" id="sede" required="" value="">
 		    	<option>Select</option>
 		    	<option value="Concepción, Alajuelita" <?= $row['sede']=='Concepción, Alajuelita'? 'selected':'' ?>>Concepción, Alajuelita</option>
-		    	<option value="Segundo" <?= $row['sede']=='segundo'? 'selected':'' ?>>25 de Julio, Hatillo</option>
-		    	<option value="Tercero" <?= $row['sede']=='Tercero'? 'selected':'' ?>>Linda Vista, Patarrá</option>
+		    	<option value="25 de Julio, Hatillo" <?= $row['sede']=='25 de Julio, Hatillo'? 'selected':'' ?>>25 de Julio, Hatillo</option>
+		    	<option value="Linda Vista, Patarrá" <?= $row['sede']=='Linda Vista, Patarrá'? 'selected':'' ?>>Linda Vista, Patarrá</option>
 		    </select>
 	  	</div>
 	  	

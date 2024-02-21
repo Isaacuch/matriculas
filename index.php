@@ -246,14 +246,15 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-<div class="MuestraRedesSociales">
-  <h4>Síguenos en nuestras redes sociales:</h4>
-  <ul>
+  <div class="MuestraRedesSociales">
+    <h1 class="text-center">Síguenos en nuestras Redes Sociales</h1><br>
+    <ul>
     <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>
     <li><a href="https://www.facebook.com/fundavida.org" target="_blank"> Facebook</a></li>
     <li><a href="https://www.youtube.com/@FundaVidaCR" target="_blank"> YouTube</a></li>
   </ul>
 </div>
+    
 
 </body>
 

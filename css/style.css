@@ -216,12 +216,14 @@ img.showimg {
 .MediosComunicación {
 	text-align: center;
 	margin: 0 auto;
+	justify-content: center;
 
 }
 
-h4 {
+h4, h4 {
 	font-size: 1.5rem;
     text-align: center;
     background-color: salmon;
 	padding: 10px;
+	justify-content: center;
 }

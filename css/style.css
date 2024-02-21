@@ -47,6 +47,12 @@ body, html {
 	justify-content: center;
 }
 
+li {
+	text-align: center;
+	justify-content: center;
+	color: salmon;
+}
+
 
 .Container3 {
 	width: 100%;

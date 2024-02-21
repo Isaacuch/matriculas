@@ -67,7 +67,7 @@
 	  	</div>
 	  	<div class="form-group">
 		    <label for="roll">Número de Matrícula</label>
-		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{6}" id="roll" required="">
+		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{3}" id="roll" required="">
 	  	</div>
 		
 	  	
@@ -83,7 +83,7 @@
 
 	  	<div class="form-group">
 		    <label for="pcontact">Teléfono de Contacto</label>
-		    <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-8]{8}" value="<?= isset($pcontact)? $pcontact: '' ; ?>" placeholder="+506........" required="">
+		    <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-9]{8}" value="<?= isset($pcontact)? $pcontact: '' ; ?>" placeholder="+506........" required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="class">Centros interactivos para matricular</label>

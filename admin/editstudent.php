@@ -66,7 +66,7 @@
 	  	</div>
 	  	<div class="form-group">
 		    <label for="roll">Número de Matrícula</label>
-		    <input name="roll" type="text" class="form-control" pattern="[0-9]{6}" id="roll" value="<?php echo $row['roll']; ?>" required="">
+		    <input name="roll" type="text" class="form-control" pattern="[0-9]{3}" id="roll" value="<?php echo $row['roll']; ?>" required="">
 	  	</div>
 
 		  <div class="form-group">
@@ -81,7 +81,7 @@
 	  	
 	  	<div class="form-group">
 		    <label for="pcontact">Número de Contacto</label>
-		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="[0-8]{8}" placeholder="+506..." required="">
+		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="[0-9]{8}" placeholder="+506..." required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="class">Matricula del Curso interactivo</label>

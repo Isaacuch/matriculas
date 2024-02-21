@@ -87,7 +87,7 @@
 		    <label for="class">Matricula del Curso interactivo</label>
 		    <select name="class" class="form-control" id="class" required="" value="">
 		    	<option>Select</option>
-		    	<option value="Primero" <?= $row['class']=='Computación'? 'selected':'' ?>>Computación</option>
+		    	<option value="Computación" <?= $row['class']=='Computación'? 'selected':'' ?>>Computación</option>
 		    	<option value="Segundo" <?= $row['class']=='Segundo'? 'selected':'' ?>>Robótica</option>
 		    	<option value="Tercero" <?= $row['class']=='Tercero'? 'selected':'' ?>>Programación</option>
 		    	<option value="Cuarto" <?= $row['class']=='Cuarto'? 'selected':'' ?>>Excel Basico</option>

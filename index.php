@@ -247,8 +247,6 @@
   <script src="js/bootstrap.min.js"></script>
 
 
-
-  <div class="MediosComunicación">
   <h4>Síguenos en nuestras redes sociales:</h4>
   <ul>
     <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>

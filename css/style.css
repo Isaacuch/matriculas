@@ -196,3 +196,15 @@ img.showimg {
 .btn-custom:hover {
 	background-color: #fcb900;
 }
+
+.btn-danger {
+	color: #fff;
+	background-color: #cf2e2e;
+	border-color: #cf2e2e;
+}
+
+.btn-warning {
+	color: #212529;
+	background-color: #fcb900;
+	border-color: #fcb900;
+}

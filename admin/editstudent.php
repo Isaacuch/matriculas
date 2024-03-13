@@ -14,7 +14,7 @@
   if (isset($_POST['updatestudent'])) {
   	$name = $_POST['name'];
   	$roll = $_POST['roll'];
-  	$address = $_POST['address'];
+  	$sede = $_POST['sede'];
   	$pcontact = $_POST['pcontact'];
   	$class = $_POST['class'];
   	

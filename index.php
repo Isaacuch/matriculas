@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+/* Comienzo del Index */
 <body>
   <div class="Container3">
     <?php
@@ -26,7 +27,7 @@
         $corepage = explode('.', $corepage);
         header('Location: index.php?page=' . $corepage[0]);
       }
-    }
+    } 
     
 
     if (isset($_POST['addstudent'])) {

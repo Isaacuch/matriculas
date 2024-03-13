@@ -16,7 +16,6 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-/* Comienzo del Index */
 <body>
   <div class="Container3">
     <?php

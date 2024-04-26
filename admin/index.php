@@ -91,7 +91,7 @@ if (!isset($_SESSION['user_login'])) {
     <?php $showuser = $_SESSION['user_login']; $haha = mysqli_query($db_con,"SELECT * FROM `users` WHERE `username`='$showuser';"); $showrow=mysqli_fetch_array($haha); ?>
     <ul class="nav navbar-nav ">
 
-    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/fundavidacr/"><i class="fa fa-user"></i> Instagram</a></li>
+    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/fundavidacr/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
 
 
     <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>

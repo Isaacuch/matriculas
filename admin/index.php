@@ -83,10 +83,17 @@ if (!isset($_SESSION['user_login'])) {
         </div>  
     </div>
     <br><br>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container1">
+    <nav class="navbar navbar-expand-lg navbar-grey dark bg-grey dark">
+    <div id="RS-container ">
     <h1 class="text-center">Síguenos en nuestras Redes Sociales</h1><br>
     <ul>
+    <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
+    <?php $showuser = $_SESSION['user_login']; $haha = mysqli_query($db_con,"SELECT * FROM `users` WHERE `username`='$showuser';"); $showrow=mysqli_fetch_array($haha); ?>
+    <ul class="nav navbar-nav ">
+
+    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/fundavidacr/"><i class="fa fa-user"></i> Instagram</a></li>
+
+
     <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>
     <li><a href="https://www.facebook.com/fundavida.org" target="_blank"> Facebook</a></li>
     <li><a href="https://www.youtube.com/@FundaVidaCR" target="_blank"> YouTube</a></li>
@@ -94,7 +101,7 @@ if (!isset($_SESSION['user_login'])) {
   </ul>
 </div>
     </nav>
-    
+
     <div class="clearfix"></div>
       <br><br><br><br><br><br>
       <center><h2>Para más información ingresar al sitio Oficial de la Fundación <a href="https://www.fundavida.org/pagina-principal/">FundaVida</a></h2></center>

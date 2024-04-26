@@ -6,6 +6,54 @@ if (isset($_POST['register'])) {
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$c_password = $_POST['c_password'];
+/*
+Aquí empieza la sentencia del envio del correo con la contraseña predeterminada
+*/
+// Verificar campos obligatorios y validar
+$input_error = array();
+// ... Código de validación existente ...
+
+// Función para generar una contraseña aleatoria
+function generarContraseñaAleatoria($longitud = 8) {
+    $caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $contraseña = '';
+    for ($i = 0; $i < $longitud; $i++) {
+        $contraseña .= $caracteres[rand(0, strlen($caracteres) - 1)];
+    }
+    return $contraseña;
+}
+
+// Generar una contraseña predeterminada aleatoria
+$contraseñaPredeterminada = generarContraseñaAleatoria();
+
+// Envía correo electrónico con la contraseña predeterminada
+$subject = "Contraseña Predeterminada";
+$message = "Estimado $name,\n\nTu contraseña predeterminada es: $contraseñaPredeterminada\n\nPor favor, cámbiala después de iniciar sesión.";
+$headers = "From: tuemail@tudominio.com";
+
+if (mail($email, $subject, $message, $headers)) {
+	// Correo electrónico enviado con éxito, continuar con la inserción de datos en la base de datos
+
+	// Insertar datos en la base de datos
+	$password = sha1(md5($password));
+	$query = "INSERT INTO `users`(`name`, `email`, `username`, `password`, `photo`, `status`) VALUES ('$name', '$email', '$username', '$password','$photo_name','inactivo');";
+	$result = mysqli_query($db_con, $query);
+	if ($result) {
+		move_uploaded_file($_FILES['photo']['tmp_name'], 'images/' . $photo_name);
+		header('Location: register.php?insert=sucess');
+	} else {
+		header('Location: register.php?insert=error');
+	}
+} else {
+	// Error al enviar correo electrónico
+	echo "Error al enviar el correo electrónico.";
+}
+
+
+/*
+Aquí termina la sentencia del envio del correo con la contraseña predeterminada
+*/
+
 
 	$photo = explode('.', $_FILES['photo']['name']);
 	$photo = end($photo);
@@ -13,16 +61,16 @@ if (isset($_POST['register'])) {
 
 	$input_error = array();
 	if (empty($name)) {
-		$input_error['name'] = "Es necesario diligenciar el campo de Nombre";
+		$input_error['name'] = "Es necesario llenar el campo de Nombre";
 	}
 	if (empty($email)) {
-		$input_error['email'] = "Es necesario diligencia el campo de Correo";
+		$input_error['email'] = "Es necesario llenar el campo de Correo";
 	}
 	if (empty($username)) {
-		$input_error['username'] = "Debes diligenciar el campo de usuario";
+		$input_error['username'] = "Debes llenar el campo de usuario";
 	}
 	if (empty($password)) {
-		$input_error['password'] = "Debes diligenciar el campo de contraseña";
+		$input_error['password'] = "Debes llenar el campo de contraseña";
 	}
 	if (empty($photo)) {
 		$input_error['photo'] = "La fotografía es un campo requerido";

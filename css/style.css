@@ -27,12 +27,6 @@ body, html {
 	width: 100%;
 }
 
-.container1 { 
-	align-items: center;
-	text-align: center;
-	margin: 0 auto;
-	width: 100%;
-}
 
 .container1 {
 	text-align: center;
@@ -140,9 +134,17 @@ img {
 	z-index: 1000;
 }
 
+
 #Logo {
 	width: 300px;
 	height: auto;
+}
+
+#RS-container {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1000;
 }
 
 .infotable th,

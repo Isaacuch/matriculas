@@ -27,6 +27,13 @@ body, html {
 	width: 100%;
 }
 
+.container1 { 
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
 .container1 {
 	text-align: center;
 }

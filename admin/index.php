@@ -83,6 +83,7 @@ if (!isset($_SESSION['user_login'])) {
         </div>  
     </div>
     <br><br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container1">
     <h1 class="text-center">Síguenos en nuestras Redes Sociales</h1><br>
     <ul>
@@ -92,6 +93,8 @@ if (!isset($_SESSION['user_login'])) {
     <li><a href="https://api.whatsapp.com/send/?phone=%2B50688708991&text&type=phone_number&app_absent=0" target="_blank">Comuníquese con nosotros!, whatsapp</a></li>
   </ul>
 </div>
+    </nav>
+    
     <div class="clearfix"></div>
       <br><br><br><br><br><br>
       <center><h2>Para más información ingresar al sitio Oficial de la Fundación <a href="https://www.fundavida.org/pagina-principal/">FundaVida</a></h2></center>

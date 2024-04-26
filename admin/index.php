@@ -92,12 +92,10 @@ if (!isset($_SESSION['user_login'])) {
     <ul class="nav navbar-nav ">
 
     <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/fundavidacr/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/fundavida.org"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+    <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@FundaVidaCR"><i class="fa-brands fa-youtube"></i> You Tube</a></li>
+    <li class="nav-item"><a class="nav-link" href="https://api.whatsapp.com/send/?phone=%2B50688708991&text&type=phone_number&app_absent=0"><i class="fa-brands fa-square-whatsapp"></i> WhatsApp</a></li>
 
-
-    <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>
-    <li><a href="https://www.facebook.com/fundavida.org" target="_blank"> Facebook</a></li>
-    <li><a href="https://www.youtube.com/@FundaVidaCR" target="_blank"> YouTube</a></li>
-    <li><a href="https://api.whatsapp.com/send/?phone=%2B50688708991&text&type=phone_number&app_absent=0" target="_blank">Comuníquese con nosotros!, whatsapp</a></li>
   </ul>
 </div>
     </nav>

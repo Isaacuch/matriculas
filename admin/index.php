@@ -84,15 +84,13 @@ if (!isset($_SESSION['user_login'])) {
     </div>
     <br><br>
     <nav class="navbar navbar-expand-lg navbar-grey dark bg-grey dark">
-    <div id="clearfix">
+    <div id="clearfix"></div>
     <br><br><br><br><br><br>
     <center><h2>Síguenos en nuestras Redes Sociales</h2></center>
-    </div>
     <ul>
     <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
     <?php $showuser = $_SESSION['user_login']; $haha = mysqli_query($db_con,"SELECT * FROM `users` WHERE `username`='$showuser';"); $showrow=mysqli_fetch_array($haha); ?>
     <ul class="nav navbar-nav ">
-
     <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/fundavidacr/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
     <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/fundavida.org"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
     <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@FundaVidaCR"><i class="fa-brands fa-youtube"></i> You Tube</a></li>

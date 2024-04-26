@@ -85,7 +85,7 @@ if (!isset($_SESSION['user_login'])) {
     <br><br>
     <nav class="navbar navbar-expand-lg navbar-grey dark bg-grey dark">
     <div id="RS-container ">
-    <h1 class="text-center">Síguenos en nuestras Redes Sociales</h1><br>
+    <h1 class="text-right">Síguenos en nuestras Redes Sociales</h1><br>
     <ul>
     <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
     <?php $showuser = $_SESSION['user_login']; $haha = mysqli_query($db_con,"SELECT * FROM `users` WHERE `username`='$showuser';"); $showrow=mysqli_fetch_array($haha); ?>

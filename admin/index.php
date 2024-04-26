@@ -85,7 +85,7 @@ if (!isset($_SESSION['user_login'])) {
     <br><br>
     <nav class="navbar navbar-expand-lg navbar-grey dark bg-grey dark">
     <div id="RS-container ">
-    <h1 class="text-right">Síguenos en nuestras Redes Sociales</h1><br>
+    <h2 class="text-center">Síguenos en nuestras Redes Sociales</h2><br>
     <ul>
     <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
     <?php $showuser = $_SESSION['user_login']; $haha = mysqli_query($db_con,"SELECT * FROM `users` WHERE `username`='$showuser';"); $showrow=mysqli_fetch_array($haha); ?>
@@ -95,7 +95,6 @@ if (!isset($_SESSION['user_login'])) {
     <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/fundavida.org"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
     <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@FundaVidaCR"><i class="fa-brands fa-youtube"></i> You Tube</a></li>
     <li class="nav-item"><a class="nav-link" href="https://api.whatsapp.com/send/?phone=%2B50688708991&text&type=phone_number&app_absent=0"><i class="fa-brands fa-square-whatsapp"></i> WhatsApp</a></li>
-
   </ul>
 </div>
     </nav>

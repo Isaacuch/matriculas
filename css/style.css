@@ -1,38 +1,220 @@
-.infotable th, .infotable td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 10px 15px;
+body, html {
+	font-family: Open Sans, sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	color: #000;
+	font-weight: 400;
+	background-color: #EEEEEE;
+	overflow-x: hidden !important;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
 }
-.infotable{
+
+.cold-md-4 offet-md-4 {
+	text-align: center;
+	justify-content: center;
+	height: 80%;
+}
+
+.Acceso {
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
 	width: 100%;
 }
-.infotable th{
+
+.container1 {
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	text-align: center;
+}
+
+.row1 {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	justify-content: center;
+}
+
+li {
+	text-align: center;
+	justify-content: center;
+	color: salmon;
+}
+
+
+.Container3 {
+	width: 100%;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: #f9f9f9;
+	text-align: center;
+}
+
+
+.form-control {
+	margin-bottom: 10px;
+}
+
+.curso {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.curso img {
+	max-width: 50%;
+	height: 100px;
+	width: 100px;
+	display: block;
+	margin-top: 20px;
+
+}
+
+.curso h2 {
+	padding: 10px 20px 20;
+	text-align: center;
+	margin-top: 10px;
+}
+
+h1 {
+	font-family: Open Sans, sans-serif;
+	text-align: center;
+	padding: 10px 20px 20;
+	margin-top: 10px;
+}
+
+h2 {
+	font-family: Open Sans, sans-serif;
+	text-align: center;
+	padding: 10px 20px 20;
+	margin-top: 10px;
+}
+
+h3 {
+	font-family: Open Sans, sans-serif;
+	text-align: center;
+	padding: 10px 20px 20;
+	margin-top: 10px;
+	color: #ff6900;
+}
+
+
+image {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+
+#logo-container {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1000;
+}
+
+#Logo {
+	width: 300px;
+	height: auto;
+}
+
+.infotable th,
+.infotable td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 10px 15px;
+}
+
+.infotable {
+	width: 100%;
+}
+
+.infotable th {
 	background: #000;
 	color: #fff;
 }
-.loginform{
+
+.loginform {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%)
 }
-footer{
+
+footer {
 	background: #007BFF;
-	color:#fff;
+	color: #ffffff;
 	padding: 20px 0px 5px 5px;
 	margin-top: 20px;
 }
-.error{
+
+.error {
 	color: red;
 	font-style: italic;
 }
 
 input#photo {
-    width: 260px;
+	width: 260px;
 }
 
-img.showimg{
+img.showimg {
 	border-radius: 50%;
 	height: 40px;
 	width: 40px;
+}
+
+.form-group {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.btn-custom {
+	background-color: #EEEEEE;
+	color: #000;
+	font-size: 14px;
+	padding: 0;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.btn-custom:hover {
+	background-color: #fcb900;
+}
+
+.bg-info {
+	background-color: #51B82D!important;
+}
+
+.btn-danger {
+	color: #fff;
+	background-color: #cf2e2e;
+	border-color: #cf2e2e;
+}
+
+.btn-warning {
+	color: #212529;
+	background-color: #fcb900;
+	border-color: #fcb900;
 }

@@ -30,8 +30,11 @@ if (!isset($_SESSION['user_login'])) {
     <title>Panel de Control</title>
   </head>
   <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php"><i class="fas fa-chart-line fa-3x"></i></a>
+
+  <nav class="navbar navbar-expand-lg navbar-white grey bg-white grey">
+  <div id="logo-container ">
+    <img id="Logo" src="./images/logo1.png" alt="Logo de la empresa">
+  </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -39,10 +42,10 @@ if (!isset($_SESSION['user_login'])) {
   <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
     <?php $showuser = $_SESSION['user_login']; $haha = mysqli_query($db_con,"SELECT * FROM `users` WHERE `username`='$showuser';"); $showrow=mysqli_fetch_array($haha); ?>
     <ul class="nav navbar-nav ">
-      <li class="nav-item"><a class="nav-link" href="index.php?page=user-profile"><i class="fa fa-user"></i> Hola, hola <?php echo $showrow['name']; ?>!</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.php?page=user-profile"><i class="fa fa-user"></i> Inicio</a></li>
       <li class="nav-item"><a class="nav-link" href="index.php?page=add-student"><i class="fa fa-user-plus"></i> Agregar Estudiante</a></li>
       <li class="nav-item"><a class="nav-link" href="index.php?page=user-profile"><i class="fa fa-user"></i> Perfil</a></li>
-      <li class="nav-item"><a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Cerrar Sesión</a></li>
+      <li class="nav-item1"><a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Cerrar Sesión</a></li>
     </ul>
   </div>
 </nav>
@@ -79,10 +82,19 @@ if (!isset($_SESSION['user_login'])) {
         </div>
         </div>  
     </div>
+    <br><br>
+    <div class="container1">
+    <h1 class="text-center">Síguenos en nuestras Redes Sociales</h1><br>
+    <ul>
+    <li><a href="https://www.instagram.com/fundavidacr/" target="_blank"> Instagram</a></li>
+    <li><a href="https://www.facebook.com/fundavida.org" target="_blank"> Facebook</a></li>
+    <li><a href="https://www.youtube.com/@FundaVidaCR" target="_blank"> YouTube</a></li>
+    <li><a href="https://api.whatsapp.com/send/?phone=%2B50688708991&text&type=phone_number&app_absent=0" target="_blank">Comuníquese con nosotros!, whatsapp</a></li>
+  </ul>
+</div>
     <div class="clearfix"></div>
-    
-      <br><br><br><br><br><br><br><br><br><br><br><br>
-      <center><h2>Para más desarrollos gratuitos accede a <a href="https://www.configuroweb.com/tag/php/">ConfiguroWeb</a></h2></center>
+      <br><br><br><br><br><br>
+      <center><h2>Para más información ingresar al sitio Oficial de la Fundación <a href="https://www.fundavida.org/pagina-principal/">FundaVida</a></h2></center>
       
     
     <script type="text/javascript">

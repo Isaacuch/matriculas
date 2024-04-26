@@ -14,7 +14,7 @@
   if (isset($_POST['updatestudent'])) {
   	$name = $_POST['name'];
   	$roll = $_POST['roll'];
-  	$address = $_POST['address'];
+  	$sede = $_POST['sede'];
   	$pcontact = $_POST['pcontact'];
   	$class = $_POST['class'];
   	
@@ -28,7 +28,7 @@
   	}
   	
 
-  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`city`='$address',`pcontact`='$pcontact',`photo`='$photo' WHERE `id`= $id";
+  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`sede`='$sede',`pcontact`='$pcontact',`photo`='$photo' WHERE `id`= $id";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Student Updated!</p>';
 		if (!empty($_FILES['photo']['name'])) {
@@ -52,7 +52,7 @@
 
 	<?php
 		if (isset($id)) {
-			$query = "SELECT `id`, `name`, `roll`, `class`, `city`, `pcontact`, `photo`, `datetime` FROM `student_info` WHERE `id`=$id";
+			$query = "SELECT `id`, `name`, `roll`, `class`, `sede`, `pcontact`, `photo`, `datetime` FROM `student_info` WHERE `id`=$id";
 			$result = mysqli_query($db_con,$query);
 			$row = mysqli_fetch_array($result);
 		}
@@ -65,26 +65,33 @@
 		    <input name="name" type="text" class="form-control" id="name" value="<?php echo $row['name']; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="roll">Número de Matrícula</label>
-		    <input name="roll" type="text" class="form-control" pattern="[0-9]{6}" id="roll" value="<?php echo $row['roll']; ?>" required="">
+		    <label for="roll">Número de Cédula</label>
+		    <input name="roll" type="text" class="form-control" pattern="[0-9]{9}" id="roll" value="<?php echo $row['roll']; ?>" required="">
 	  	</div>
-	  	<div class="form-group">
-		    <label for="address">Dirección de Estudiante</label>
-		    <input name="address" type="text" class="form-control" id="address" value="<?php echo $row['city']; ?>" required="">
+
+		  <div class="form-group">
+		    <label for="sede">Sede del Estudiante</label>
+		    <select name="sede" class="form-control" id="sede" required="" value="">
+		    	<option>Select</option>
+		    	<option value="Alajuelita, Concepción" <?= $row['sede']=='Alajuelita, Concepción'? 'selected':'' ?>>Alajuelita, Concepción</option>
+		    	<option value="Hatillo, 25 de Julio" <?= $row['sede']=='Hatillo, 25 de Julio'? 'selected':'' ?>>Hatillo, 25 de Julio</option>
+		    	<option value="Desamparados, Linda Vista" <?= $row['sede']=='Desamparados, Linda Vista'? 'selected':'' ?>>Desamparados, Linda Vista</option>
+		    </select>
 	  	</div>
+	  	
 	  	<div class="form-group">
 		    <label for="pcontact">Número de Contacto</label>
-		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="[0-9]{10}" placeholder="+57..." required="">
+		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="[0-9]{8}" placeholder="+506..." required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="class">Grado</label>
+		    <label for="class">Matricula del Curso interactivo</label>
 		    <select name="class" class="form-control" id="class" required="" value="">
 		    	<option>Select</option>
-		    	<option value="Primero" <?= $row['class']=='Primero'? 'selected':'' ?>>Primero</option>
-		    	<option value="Segundo" <?= $row['class']=='Segundo'? 'selected':'' ?>>Segundo</option>
-		    	<option value="Tercero" <?= $row['class']=='Tercero'? 'selected':'' ?>>Tercero</option>
-		    	<option value="Cuarto" <?= $row['class']=='Cuarto'? 'selected':'' ?>>Cuarto</option>
-		    	<option value="Quinto" <?= $row['class']=='Quinto'? 'selected':'' ?>>Quinto</option>
+		    	<option value="Computación" <?= $row['class']=='Computación'? 'selected':'' ?>>Computación</option>
+		    	<option value="Robótica" <?= $row['class']=='Robótica'? 'selected':'' ?>>Robótica</option>
+		    	<option value="Programación" <?= $row['class']=='Programación'? 'selected':'' ?>>Programación</option>
+		    	<option value="Excel Basico" <?= $row['class']=='Excel Basico'? 'selected':'' ?>>Excel Basico</option>
+		    	<option value="Excel Avanzado" <?= $row['class']=='Excel Avanzado'? 'selected':'' ?>>Excel Avanzado</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">

@@ -11,15 +11,16 @@
   if (isset($_POST['addstudent'])) {
   	$name = $_POST['name'];
   	$roll = $_POST['roll'];
-  	$address = $_POST['address'];
+  	$sede = $_POST['sede'];
   	$pcontact = $_POST['pcontact'];
-  	$class = $_POST['class'];
+	  $class = $_POST['class'];
+  	
   	
   	$photo = explode('.', $_FILES['photo']['name']);
   	$photo = end($photo); 
   	$photo = $roll.date('Y-m-d-m-s').'.'.$photo;
 
-  	$query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `city`, `pcontact`, `photo`) VALUES ('$name', '$roll', '$class', '$address', '$pcontact','$photo');";
+  	$query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `sede`, `pcontact`, `photo`) VALUES ('$name', '$roll', '$class', '$sede', '$pcontact','$photo');";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Estudiante Ingresado Exitosamente</p>';
   		move_uploaded_file($_FILES['photo']['tmp_name'], 'images/'.$photo);
@@ -66,26 +67,34 @@
 		    <input name="name" type="text" class="form-control" id="name" value="<?= isset($name)? $name: '' ; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="roll">Número de Matrícula</label>
-		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{6}" id="roll" required="">
+		    <label for="roll">Número de Cédula</label>
+		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{9}" id="roll" required="">
 	  	</div>
-	  	<div class="form-group">
-		    <label for="address">Dirección de Estudiante</label>
-		    <input name="address" type="text" value="<?= isset($address)? $address: '' ; ?>" class="form-control" id="address" required="">
+		
+	  	
+		<div class="form-group">
+		    <label for="sede">Sede del Estudiante</label>
+		    <select name="sede" class="form-control" id="sede" required="">
+		    	<option>Selecciona</option>
+		    	<option value="Alajuelita, Concepción">Alajuelita, Concepción</option>
+		    	<option value="Hatillo, 25 de Julio">Hatillo, 25 de Julio</option>
+		    	<option value="Desamparados, Linda Vista">Desamparados, Linda Vista</option>
+		    </select>
 	  	</div>
+
 	  	<div class="form-group">
 		    <label for="pcontact">Teléfono de Contacto</label>
-		    <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-9]{10}" value="<?= isset($pcontact)? $pcontact: '' ; ?>" placeholder="+57........." required="">
+		    <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-9]{8}" value="<?= isset($pcontact)? $pcontact: '' ; ?>" placeholder="+506........" required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="class">Grado Estudiantil</label>
+		    <label for="class">Centros interactivos para matricular</label>
 		    <select name="class" class="form-control" id="class" required="">
 		    	<option>Selecciona</option>
-		    	<option value="Primero">Primero</option>
-		    	<option value="Segundo">Segundo</option>
-		    	<option value="Tercero">Tercero</option>
-		    	<option value="Cuarto">Cuarto</option>
-		    	<option value="Quinto">Quinto</option>
+		    	<option value="Computación">Computación</option>
+		    	<option value="Robótica">Robótica</option>
+		    	<option value="Programación">Programación</option>
+		    	<option value="Excel Basico ">Excel Basico </option>
+		    	<option value="Excel Avanzado">Excel Avanzado</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">

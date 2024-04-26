@@ -38,7 +38,7 @@
         }
         if (isset($_GET['edit'])) {
           if ($_GET['edit']=='success') {
-            echo "<p style='color: green; font-weight: bold; '>Estudiante eliminado exitósamente</p>";
+            echo "<p style='color: green; font-weight: bold; '>Estudiante editado exitósamente</p>";
           }  
         }
         if (isset($_GET['edit'])) {
@@ -55,9 +55,10 @@
     <tr>
       <th scope="col">SL</th>
       <th scope="col">Nombre</th>
-      <th scope="col">Matrícula</th>
-      <th scope="col">Dirección</th>
+      <th scope="col">Cédula</th>
+      <th scope="col">Sede</th>
       <th scope="col">Contacto</th>
+      <th scope="col">Curso</th>
       <th scope="col">Fotografía</th>
       <th scope="col">Acción</th>
     </tr>
@@ -72,8 +73,9 @@
         echo '<td>'.$i.'</td>
           <td>'.ucwords($result['name']).'</td>
           <td>'.$result['roll'].'</td>
-          <td>'.ucwords($result['city']).'</td>
+          <td>'.ucwords($result['sede']).'</td>
           <td>'.$result['pcontact'].'</td>
+          <td>'.ucwords($result['class']).'</td>
           <td><img src="images/'.$result['photo'].'" height="50px"></td>
           <td>
             <a class="btn btn-xs btn-warning" href="index.php?page=editstudent&id='.base64_encode($result['id']).'&photo='.base64_encode($result['photo']).'">

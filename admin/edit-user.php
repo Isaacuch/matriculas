@@ -7,6 +7,10 @@
        header('Location: index.php?page='.$corepage[0]);
      }
     }
+/*
+Verificamos la página actual que esta siendo accedida por el usuario
+sí la página no es el index, redirige al usuario a index.php 
+*/	
     
     $id = base64_decode($_GET['id']);
   if (isset($_POST['userupdate'])) {

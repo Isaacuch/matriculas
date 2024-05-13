@@ -7,6 +7,11 @@
        header('Location: index.php?page='.$corepage[0]);
      }
     }
+
+/*
+Verificamos la página actual que esta siendo accedida por el usuario
+sí la página no es el index, redirige al usuario a index.php 
+*/	
 ?>
 <h1 class="text-primary"><i class="fas fa-users"></i>  Todos los Estudiantes<small class="text-warning"> Lista de Estudiantes</small></h1>
 <nav aria-label="breadcrumb">

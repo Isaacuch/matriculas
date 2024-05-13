@@ -8,7 +8,12 @@ $user=  $_SESSION['user_login'];
        header('Location: index.php?page='.$corepage[0]);
      }
     }
+/*
+Verificamos la página actual que esta siendo accedida por el usuario
+sí la página no es el index, redirige al usuario a index.php 
+*/	
 ?>
+
 <h1 class="text-primary"><i class="fas fa-user"></i>  Perfil de Usuario</h1>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">

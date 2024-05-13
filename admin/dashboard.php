@@ -7,6 +7,10 @@
        header('Location: index.php?page='.$corepage[0]);
      }
     }
+/*
+Verificamos la página actual que esta siendo accedida por el usuario
+sí la página no es el index, redirige al usuario a index.php 
+*/	
 ?>
 
 <h1><a href="index.php"><i class="fas fa-tachometer-alt"></i>  Panel de Control</a> <small>Vista General</small></h1>

@@ -26,6 +26,9 @@ sí la página no es el index, redirige al usuario a index.php
   		header('Location: index.php?page=user-profile&edit=error');
   	}
   }
+/*
+ Actualización de la información de un usuario en la base de datos 
+*/
 ?>
 <h1 class="text-primary"><i class="fas fa-user-plus"></i>  Editar Información de Usuario<small class="text-warning"> Editar Usuario</small></h1>
 <nav aria-label="breadcrumb">
@@ -35,7 +38,9 @@ sí la página no es el index, redirige al usuario a index.php
      <li class="breadcrumb-item active" aria-current="page">Editar Perfil de Usuario</li>
   </ol>
 </nav>
-
+/*
+Menú de navegación de la pagina
+*/
 	<?php
 		if (isset($id)) {
 
@@ -44,6 +49,9 @@ sí la página no es el index, redirige al usuario a index.php
 			$row = mysqli_fetch_array($result);
 		}
 	 ?>
+/*
+Metodo de editar el usuario administrador por medio del post
+*/
 <div class="row">
 <div class="col-sm-6">
 	<form enctype="multipart/form-data" method="POST" action="">
@@ -60,5 +68,9 @@ sí la página no es el index, redirige al usuario a index.php
 		    <input name="userupdate" value="Actualizar Perfil" type="submit" class="btn btn-danger">
 	  	</div>
 	 </form>
+/*
+Se puede actualizar el Nombre y el correo pero la contraseña solo se podra restablecer 
+por medio de la base de datos a nivel interno, esto con fin ofrecer mayor seguridad al sistema
+*/
 </div>
 </div>

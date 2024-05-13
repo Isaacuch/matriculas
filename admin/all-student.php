@@ -64,6 +64,7 @@
     </tr>
   </thead>
   <tbody>
+
     <?php 
       $query=mysqli_query($db_con,'SELECT * FROM `student_info` ORDER BY `student_info`.`datetime` DESC;');
       $i=1;

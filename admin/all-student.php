@@ -12,6 +12,7 @@
 Verificamos la página actual que esta siendo accedida por el usuario
 sí la página no es el index, redirige al usuario a index.php 
 */	
+
 ?>
 <h1 class="text-primary"><i class="fas fa-users"></i>  Todos los Estudiantes<small class="text-warning"> Lista de Estudiantes</small></h1>
 <nav aria-label="breadcrumb">
@@ -20,6 +21,10 @@ sí la página no es el index, redirige al usuario a index.php
      <li class="breadcrumb-item active" aria-current="page">Listado Estudiantes</li>
   </ol>
 </nav>
+/*
+Realizamos la parte del menú de navegación
+*/
+
 <?php if(isset($_GET['delete']) || isset($_GET['edit'])) {?>
   <div role="alert" aria-live="assertive" aria-atomic="true" class="toast fade" data-autohide="true" data-animation="true" data-delay="2000">
     <div class="toast-header">
@@ -51,10 +56,15 @@ sí la página no es el index, redirige al usuario a index.php
             echo "<p style='color: red; font-weight: bold;'>Estudiante no editado</p>";
           }  
         }
+/*
+Insertamos al estudiante y creamos los mensajes para el metodo realizado 
+sea el de eliminar o el de editar, para determinar si se realizo la acción del metodo.
+*/
       ?>
     </div>
   </div>
     <?php } ?>
+
 <table class="table  table-striped table-hover table-bordered" id="data">
   <thead class="thead-dark">
     <tr>
@@ -69,8 +79,14 @@ sí la página no es el index, redirige al usuario a index.php
     </tr>
   </thead>
   <tbody>
+/*
+Se crea una tabla donde se mustra
+la información del estudiante 
+*/
+
 
     <?php 
+
       $query=mysqli_query($db_con,'SELECT * FROM `student_info` ORDER BY `student_info`.`datetime` DESC;');
       $i=1;
       while ($result = mysqli_fetch_array($query)) { ?>
@@ -91,14 +107,20 @@ sí la página no es el index, redirige al usuario a index.php
              <i class="fas fa-trash-alt"></i></a></td>';?>
       </tr>  
      <?php $i++;} ?>
+/*
+Se mustran los datos de los estudiantes matriculados y almacenados de la base de datos. 
+*/
     
   </tbody>
 </table>
 <script type="text/javascript">
   function confirmationDelete(anchor)
 {
-   var conf = confirm('Estás seguro que deseas eliminar este registro, esta opción es irreversible');
+   var conf = confirm('¿Está seguro de que desea eliminar este registro?');
    if(conf)
       window.location=anchor.attr("href");
 }
+/*
+Confirmación de la acción de eliminar
+*/
 </script>

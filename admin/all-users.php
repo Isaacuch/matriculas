@@ -19,6 +19,9 @@ sí la página no es el index, redirige al usuario a index.php
      <li class="breadcrumb-item active" aria-current="page">Todos los Usuarios</li>
   </ol>
 </nav>
+/*
+Realizamos la parte del menú de navegación
+*/
 
 <table class="table  table-striped table-hover table-bordered" id="data">
   <thead class="thead-dark">
@@ -32,6 +35,10 @@ sí la página no es el index, redirige al usuario a index.php
     </tr>
   </thead>
   <tbody>
+/*
+Se crea una tabla donde se mustra
+la información del estudiante 
+*/
     <?php 
       $query=mysqli_query($db_con,'SELECT * FROM `users`');
       $i=1;
@@ -46,14 +53,20 @@ sí la página no es el index, redirige al usuario a index.php
           <td>'.$result['status'].'</td>';?>
       </tr>  
      <?php $i++;} ?>
+/*
+Se mustran los datos de los usuarios administradores. 
+*/
     
   </tbody>
 </table>
 <script type="text/javascript">
   function confirmationDelete(anchor)
 {
-   var conf = confirm('Are you sure want to delete this record?');
+   var conf = confirm('¿Está seguro de que desea eliminar este registro?');
    if(conf)
       window.location=anchor.attr("href");
 }
+/*
+Confirmación de la acción de eliminar
+*/
 </script>

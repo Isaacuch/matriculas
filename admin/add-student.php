@@ -7,6 +7,10 @@
        header('Location: index.php?page='.$corepage[0]);
      }
     }
+/*
+Verificamos la página actual que esta siendo accedida por el usuario
+sí la página no es el index, redirige al usuario a index.php 
+*/	
 
   if (isset($_POST['addstudent'])) {
   	$name = $_POST['name'];
@@ -14,8 +18,7 @@
   	$sede = $_POST['sede'];
   	$pcontact = $_POST['pcontact'];
 	  $class = $_POST['class'];
-  	
-  	
+
   	$photo = explode('.', $_FILES['photo']['name']);
   	$photo = end($photo); 
   	$photo = $roll.date('Y-m-d-m-s').'.'.$photo;
@@ -28,6 +31,14 @@
   		$datainsert['inserterror']= '<p style="color: red;">Estudiante no ingresado, revise la información diligenciada.</p>';
   	}
   }
+/*
+Verifica si se ha enviado el formulario mediante el post
+si se envio, recupere los valores.
+*/
+
+/*
+Realizamos la parte del menú de navegación
+*/
 ?>
 <h1 class="text-primary"><i class="fas fa-user-plus"></i>  Agregar Estudiante<small class="text-warning"> Nuevo Estudiante</small></h1>
 <nav aria-label="breadcrumb">
@@ -57,10 +68,18 @@
 	    	if (isset($datainsert['inserterror'])) {
 	    		echo $datainsert['inserterror'];
 	    	}
-	    ?>
+/*
+Realizamos un insert alert para notificar al usuario de éxito o error en la operación
+*/
+	    ?> 
 	  </div>
 	</div>
+
 		<?php } ?>
+/*
+Realizamos el llenado de los campos por parte del estudiante o encargado
+una verificando que se cumplan los datos se almacenan en la Base de Datos.
+*/
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">
 		    <label for="name">Nombre de Estudiante</label>

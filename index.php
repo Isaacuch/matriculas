@@ -28,7 +28,7 @@
       }
     } 
     
-
+/* Ingreso de Datos  */
     if (isset($_POST['addstudent'])) {
       $name = $_POST['name'];
       $roll = $_POST['roll'];
@@ -49,7 +49,7 @@
       }
     }
     
-
+/*Menú de navegación del sistema o del sitio*/
     ?>
         <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
         <h1 class="text-center"> Matriculas de Estudiante</h1><br>
@@ -59,7 +59,7 @@
             <ul>
         </nav>
 
-
+/* Se llama a la funcion student insert Into para verificar si el estudiante se agrega correctamente */
       <div class="row1">
         <div class="col-sm-6">
           <?php if (isset($datainsert)) { ?>
@@ -83,7 +83,10 @@
               </div>
             </div>
 
-
+/* 
+Formulario de estudiantes para matricularse 
+con su correpondiente validación de cada campo solicitado
+*/
           <?php } ?>
           <form enctype="multipart/form-data" method="POST" action="">
             <div class="form-group">
@@ -99,6 +102,10 @@
               <label for="sede">Sede del Estudiante</label>
               <select name="sede" class="form-control" id="sede" required="">
                 <option>Selecciona</option>
+                /*
+                Opciones disponibles de las sedes
+                Es importante ya que aquí es donde se cambian
+                 */
                 <option value="Alajuelita, Concepción">Alajuelita, Concepción</option>
                 <option value="Hatillo, 25 de Julio">Hatillo, 25 de Julio</option>
                 <option value="Desamparados, Linda Vista">Desamparados, Linda Vista</option>
@@ -113,6 +120,10 @@
               <label for="class">Centros interactivos para matricular</label>
               <select name="class" class="form-control" id="class" required="">
                 <option>Selecciona</option>
+                /*
+                Opciones del los cursos disponibles
+                Aquí y en los archivos que se necesiten se pueden cambiar
+                si se necesitara algún cambio*/
                 <option value="Computación">Computación</option>
                 <option value="Robótica">Robótica</option>
                 <option value="Programación">Programación</option>
@@ -133,8 +144,7 @@
         </div>
       </div>
   </div>
- 
-
+  /*Listado de los cursos disponibles es aquí donde se pueden editar el mostrado de los cursos */
   <div class="container1">
     <h1 class="text-center">Lista de Cursos Disponibles 2024</h1><br>
     <ul>
@@ -144,6 +154,12 @@
         <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
         <p>Requisito: Estar matriculado en la Fundación</p>
         <img src="admin/images/progra1.jpg" alt="Imagen 1">
+        /*
+        Es importante que se debe seguir este código, por si se quiere cambiar la imagen
+        ejemplo: se obtiene la imagen se agrega en la sección de imagenes en admin para despues 
+        coger el mismo codigo solo se le cambia el nombre de la imagen por la nueva
+        tener en cuenta la ruta en donde agrego la imagen 
+         */
       </div>
       <ul>
 
@@ -183,6 +199,7 @@
               </div>
               <ul>
 
+              /*Definición del formulario para observar la información del estudiante */
                 <?php if (isset($_POST['showinfo'])) {
                   $choose = $_POST['choose'];
                   $roll = $_POST['roll'];

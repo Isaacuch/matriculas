@@ -64,11 +64,12 @@ Se obtiene el nombre  y la contraseña ingresados en el formulario
 		<h1 class="text-center">Acceso Administrativo</h1>
 		<hr><br>
 		<div class="d-flex justify-content-center">
+			<!-- Se agregan mensajes de Error-->
 			<?php if (isset($usernameerr)) { ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $usernameerr; ?></div><?php }; ?>
 			<?php if (isset($worngpass)) { ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $worngpass; ?></div><?php }; ?>
 			<?php if (isset($status_inactive)) { ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $status_inactive; ?></div><?php }; ?>
 		</div>
-
+		<!-- Formulario de Inicio de sesión-->
 		<div class="row animate__animated animate__pulse">
 			<div class="col-md-4 offset-md-4">
 				<form method="POST" action="">
@@ -86,13 +87,14 @@ Se obtiene el nombre  y la contraseña ingresados en el formulario
 						<button type="submit" name="login" class="btn btn-warning">Ingresar</button>
 					</div>
 					<p>Si aún no tienes una cuenta de usuario, puedes <a href="register.php">Registrarte acá</a></p>
+					<!--Se agrega está opción por si el usuario no tiene cuenta-->
 			</div>
 			</form>
 		</div>
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!--Archivos opcionales de Javascript -->
+	<!-- Primero jQuery, luego Popper.js, y por ultimo Bootstrap JS -->
 	<script src="../js/jquery-3.5.1.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript">

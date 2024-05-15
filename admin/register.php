@@ -1,3 +1,8 @@
+/* 
+Se incluye el archivo de base de datos
+Se inicia la sesión php
+Se procesa los datos del formulario registro
+*/
 <?php require_once 'db_con.php';
 session_start();
 if (isset($_POST['register'])) {
@@ -6,11 +11,12 @@ if (isset($_POST['register'])) {
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$c_password = $_POST['c_password'];
+
 /*
 Aquí empieza la sentencia del envio del correo con la contraseña predeterminada
 */
 // Verificar campos obligatorios y validar
-$input_error = array();
+/*$input_error = array();
 // ... Código de validación existente ...
 
 // Función para generar una contraseña aleatoria
@@ -49,16 +55,17 @@ if (mail($email, $subject, $message, $headers)) {
 	echo "Error al enviar el correo electrónico.";
 }
 
-
+*/
 /*
 Aquí termina la sentencia del envio del correo con la contraseña predeterminada
 */
 
-
+/* se obtiene la extención por la fotografía*/
 	$photo = explode('.', $_FILES['photo']['name']);
 	$photo = end($photo);
 	$photo_name = $username . '.' . $photo;
 
+	/*Validación de los campos del formulario*/
 	$input_error = array();
 	if (empty($name)) {
 		$input_error['name'] = "Es necesario llenar el campo de Nombre";
@@ -75,22 +82,27 @@ Aquí termina la sentencia del envio del correo con la contraseña predeterminad
 	if (empty($photo)) {
 		$input_error['photo'] = "La fotografía es un campo requerido";
 	}
-
+/*Validación de coincidencia de contraseña*/
 	if (!empty($password)) {
 		if ($c_password !== $password) {
 			$input_error['notmatch'] = "Has ingresado mal la contraseña!";
 		}
 	}
-
+	/*Verificación de disponibilidad del correo y el nombre de usuario */
 	if (count($input_error) == 0) {
 		$check_email = mysqli_query($db_con, "SELECT * FROM `users` WHERE `email`='$email';");
 
 		if (mysqli_num_rows($check_email) == 0) {
 			$check_username = mysqli_query($db_con, "SELECT * FROM `users` WHERE `username`='$username';");
-			if (mysqli_num_rows($check_username) == 0) {
+			if (mysqli_num_rows($check_username) == 0){
+
+				/*Validación de longitud del nombre y la contraseña del usuario*/
+
 				if (strlen($username) > 7) {
 					if (strlen($password) > 7) {
+						/*Cifrado de la contraseña*/
 						$password = sha1(md5($password));
+						/*Inserción de datos a la Base de Datos de cada uno de los campos*/
 						$query = "INSERT INTO `users`(`name`, `email`, `username`, `password`, `photo`, `status`) VALUES ('$name', '$email', '$username', '$password','$photo_name','inactivo');";
 						$result = mysqli_query($db_con, $query);
 						if ($result) {
@@ -119,11 +131,11 @@ Aquí termina la sentencia del envio del correo con la contraseña predeterminad
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
+	<!-- Se requiere archivos de metadatos-->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
+	<!-- Hojas de estilo de bootstrap y css -->
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -131,17 +143,20 @@ Aquí termina la sentencia del envio del correo con la contraseña predeterminad
 </head>
 
 <body>
+	<!-- Ingreso al Registro de Usuarios -->
 	<div class="container"><br>
 		<h1 class="text-center">Registro de Usuarios</h1>
 		<hr><br>
 		<div class="d-flex justify-content-center">
 			<?php
+			/*Mensaje de confirmación de registro Exitoso*/
 			if (isset($_GET['insert'])) {
 				if ($_GET['insert'] == 'sucess') {
 					echo '<div role="alert" aria-live="assertive" aria-atomic="true" align="center" class="toast alert alert-success fade hide" data-delay="2000">Tus datos han sido ingresados exitósamente</div>';
 				}
 			}; ?>
 		</div>
+		/*Formulario de Registro y procesamiento del mismo*/
 		<div class="row animate__animated animate__pulse">
 			<div class="col-md-8 offset-md-2">
 				<form method="POST" enctype="multipart/form-data">
@@ -181,11 +196,8 @@ Aquí termina la sentencia del envio del correo con la contraseña predeterminad
 	</div>
 	<p>Si tienes una cuenta de acceso administrativo, puedes <a href="login.php">Ingresar Aquí</a></p>
 	</div>
-	<br><br><br><br><br><br>
-	<h2>Para más desarrollos gratuitos accede a <a href="https://www.configuroweb.com/tag/php/">Configuro Web</a></h2>
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- Archivos opcionales de Javascript -->
+	<!-- Primero jQuery , luego Popper.js, y por ultimo Bootstrap JS -->
 	<script src="../js/jquery-3.5.1.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript">

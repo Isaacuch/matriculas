@@ -1,3 +1,9 @@
+/*
+Hoja de estilo de CSS, donde se da un mejor aspecto a la página
+Es importante detallar que cada sección está utilizada en los archivos 
+por lo que si gusta cambiar algun elemento tendra que verificar cual es el que se utiliza en los archivos 
+para luego venir aquí, localizarlo y poder realizar sus respectivos cambios.
+*/
 body, html {
 	font-family: Open Sans, sans-serif;
 	font-size: 18px;

@@ -3,15 +3,21 @@ session_start();
 if (!isset($_SESSION['user_login'])) {
   header('Location: login.php');
 }
+/*
+Primero agregamos el archivo de conexión a la base de datos
+luego iniciamos la seseón
+verificamos si el usuario ha iniciado sesión
+se regirige al usuario no autenticado a la página de inicio de sesión 
+*/
+
 ?>
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!-- Se agregan los metadatos necesarios -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <!-- Enlaces de bootstrap y CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="../css/fontawesome.min.css">
@@ -19,8 +25,8 @@ if (!isset($_SESSION['user_login'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Enlace Opcional de JavaScript -->
+    <!-- Se incluyen los archivos Java Script para su funcionalidad interactiva de la página -->
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.dataTables.min.js"></script>
@@ -28,9 +34,15 @@ if (!isset($_SESSION['user_login'])) {
     <script src="../js/fontawesome.min.js"></script>
     <script src="../js/script.js"></script>
     <title>Panel de Control</title>
+    <!--Titulo de la Página -->
   </head>
   <body>
 
+<!--
+  Agregamos la barra de navegacón 
+  luego agregamos el container para el Logo de la empresa
+  Utilizar el botón con la opción de controlar el comportamiento de colapso.
+-->
   <nav class="navbar navbar-expand-lg navbar-white grey bg-white grey">
   <div id="logo-container ">
     <img id="Logo" src="./images/logo1.png" alt="Logo de la empresa">
@@ -38,8 +50,8 @@ if (!isset($_SESSION['user_login'])) {
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
+    <!--Barra de navegación -->
     <?php $showuser = $_SESSION['user_login']; $haha = mysqli_query($db_con,"SELECT * FROM `users` WHERE `username`='$showuser';"); $showrow=mysqli_fetch_array($haha); ?>
     <ul class="nav navbar-nav ">
       <li class="nav-item"><a class="nav-link" href="index.php?page=user-profile"><i class="fa fa-user"></i> Inicio</a></li>
@@ -57,6 +69,7 @@ if (!isset($_SESSION['user_login'])) {
               <a href="index.php?page=dashboard" class="list-group-item list-group-item-action active">
                <i class="fas fa-tachometer-alt"></i> Panel de Control
               </a>
+              <!--Opciones que ofrece el sistema -->
               <a href="index.php?page=add-student" class="list-group-item list-group-item-action"><i class="fa fa-user-plus"></i> Agregar Estudiante</a>
               <a href="index.php?page=all-student" class="list-group-item list-group-item-action"><i class="fa fa-users"></i> Todos los Estudiantes</a>
               <a href="index.php?page=all-users" class="list-group-item list-group-item-action"><i class="fa fa-users"></i> Todos los Usuarios</a>
@@ -65,13 +78,13 @@ if (!isset($_SESSION['user_login'])) {
           </div>
           <div class="col-md-9">
              <div class="content">
-                 <?php 
+              <!--Implementamos la carga dinámica por medio de parámetros de la URL y manejo de errores-->
+               <?php
                    if (isset($_GET['page'])) {
                     $page = $_GET['page'].'.php';
                     }else{
                       $page = 'dashboard.php';
                     }
-
                     if (file_exists($page)) {
                       require_once $page;
                     }else{
@@ -83,6 +96,7 @@ if (!isset($_SESSION['user_login'])) {
         </div>  
     </div>
     <br><br>
+    <!--Implementamos una sección de comunicación directa con la Fundación-->
     <nav class="navbar navbar-expand-lg navbar-grey dark bg-grey dark">
     <div id="clearfix"></div>
     <br><br><br><br><br><br>
@@ -98,12 +112,9 @@ if (!isset($_SESSION['user_login'])) {
   </ul>
 </div>
     </nav>
-
     <div class="clearfix"></div>
       <br><br><br><br><br><br>
       <center><h2>Para más información ingresar al sitio Oficial de la Fundación <a href="https://www.fundavida.org/pagina-principal/">FundaVida</a></h2></center>
-      
-    
     <script type="text/javascript">
       jQuery('.toast').toast('show');
     </script>

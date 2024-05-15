@@ -14,13 +14,19 @@ sí la página no es el index, redirige al usuario a index.php
     
     $id = base64_decode($_GET['id']);
     $oldPhoto = base64_decode($_GET['photo']);
+/*Se obtienen o se extraen los parámetros de la URL id y photo */
 
   if (isset($_POST['updatestudent'])) {
+/*
+se verifica si se ha enviado el formulario con el botón "updatestudent"
+si existe la solicitud, significa que ha sido enviado
+*/
   	$name = $_POST['name'];
   	$roll = $_POST['roll'];
   	$sede = $_POST['sede'];
   	$pcontact = $_POST['pcontact'];
   	$class = $_POST['class'];
+/* Se recuperan los datos del formulario enviados por el post */
   	
   	if (!empty($_FILES['photo']['name'])) {
   		 $photo = $_FILES['photo']['name'];
@@ -30,7 +36,7 @@ sí la página no es el index, redirige al usuario a index.php
   	}else{
   		$photo = $oldPhoto;
   	}
-  	
+/* Manejo de la foto del estudiante */
 
   	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`sede`='$sede',`pcontact`='$pcontact',`photo`='$photo' WHERE `id`= $id";
   	if (mysqli_query($db_con,$query)) {
@@ -44,7 +50,11 @@ sí la página no es el index, redirige al usuario a index.php
   		header('Location: index.php?page=all-student&edit=error');
   	}
   }
+/* Primero de construye la consulta a SQL para acualizar los datos del estudiante
+Luego se ejecuta la consulta SQl, si fue exitosa se siguen los pasos, de lo contrario se maneja el error
+Sí la actualización fue exitosa se establece un mensaje de éxito */
 ?>
+
 <h1 class="text-primary"><i class="fas fa-user-plus"></i>  Editar Información de Estudiante<small class="text-warning"> Editar</small></h1>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -53,6 +63,7 @@ sí la página no es el index, redirige al usuario a index.php
      <li class="breadcrumb-item active" aria-current="page">Agregar Estudiante</li>
   </ol>
 </nav>
+/* Se realiza un menú para la navegación del sistema  */
 
 	<?php
 		if (isset($id)) {
@@ -65,6 +76,7 @@ sí la página no es el index, redirige al usuario a index.php
 <div class="col-sm-6">
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">
+/* campo para editar al estudiante en sus respectivos campos */
 		    <label for="name">Nombre de Estudiante</label>
 		    <input name="name" type="text" class="form-control" id="name" value="<?php echo $row['name']; ?>" required="">
 	  	</div>
@@ -105,6 +117,7 @@ sí la página no es el index, redirige al usuario a index.php
 	  	<div class="form-group text-center">
 		    <input name="updatestudent" value="Editar Estudiante" type="submit" class="btn btn-danger">
 	  	</div>
+		/* La funciones permiten editar los datos de los estudiantes en sus respectivos campos*/
 	 </form>
 </div>
 </div>

@@ -63,7 +63,7 @@ Sí la actualización fue exitosa se establece un mensaje de éxito */
      <li class="breadcrumb-item active" aria-current="page">Agregar Estudiante</li>
   </ol>
 </nav>
-/* Se realiza un menú para la navegación del sistema  */
+<!-- Se realiza un menú para la navegación del sistema -->
 
 	<?php
 		if (isset($id)) {
@@ -76,7 +76,8 @@ Sí la actualización fue exitosa se establece un mensaje de éxito */
 <div class="col-sm-6">
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">
-/* campo para editar al estudiante en sus respectivos campos */
+			<!-- campo para editar al estudiante en sus respectivos campos -->
+
 		    <label for="name">Nombre de Estudiante</label>
 		    <input name="name" type="text" class="form-control" id="name" value="<?php echo $row['name']; ?>" required="">
 	  	</div>
@@ -117,7 +118,7 @@ Sí la actualización fue exitosa se establece un mensaje de éxito */
 	  	<div class="form-group text-center">
 		    <input name="updatestudent" value="Editar Estudiante" type="submit" class="btn btn-danger">
 	  	</div>
-		/* La funciones permiten editar los datos de los estudiantes en sus respectivos campos*/
+		<!-- La funciones permiten editar los datos de los estudiantes en sus respectivos campos -->
 	 </form>
 </div>
 </div>

@@ -13,7 +13,8 @@ Verificamos la página actual que esta siendo accedida por el usuario
 sí la página no es el index, redirige al usuario a index.php 
 */	
 ?>
-/* Menú de navegación del sistema */
+<!-- Menú de navegación del sistema -->
+
 <h1 class="text-primary"><i class="fas fa-user"></i>  Perfil de Usuario</h1>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -26,7 +27,8 @@ sí la página no es el index, redirige al usuario a index.php
   $row = mysqli_fetch_array($query);
 
  ?>
- /* Formulario del Usuario */
+ <!-- Formulario del Usuario -->
+
 <div class="row">
   <div class="col-sm-6">
     <table class="table table-bordered">

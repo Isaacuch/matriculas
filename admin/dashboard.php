@@ -19,9 +19,8 @@ sí la página no es el index, redirige al usuario a index.php
      <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-user"></i> Dashboard</li>
   </ol>
 </nav>
-/*
-Menú de navegación en el sistema
-*/
+<!-- Menú de navegación en el sistema-->
+
 
 <div class="row student">
   <div class="col-sm-4">
@@ -50,10 +49,9 @@ Menú de navegación en el sistema
       </div>
     </div>
   </div>
-/*
-Se muestran el numero total de estudintes y proporciona
-un enlace para ver todos los estudiantes
-*/
+  <!-- Se muestran el numero total de estudintes y proporciona
+un enlace para ver todos los estudiantes -->
+
   <div class="col-sm-4">
      <div class="card text-white bg-info mb-3">
       <div class="card-header">
@@ -82,10 +80,8 @@ un enlace para ver todos los estudiantes
       </div>
     </div>
   </div>
-  /*
-Se muestran el numero total de usuarios administradores y proporciona
-un enlace para ver todos los usuarios administradores
-*/
+<!-- Se muestran el numero total de usuarios administradores y proporciona
+un enlace para ver todos los usuarios administradores -->
 
   <div class="col-sm-4">
      <div class="card text-white bg-warning mb-3">
@@ -118,9 +114,8 @@ un enlace para ver todos los usuarios administradores
     </div>
   </div>  
 </div>
-/*Se muestra la infromación del usuarios actual y 
-proporciona un enlace para acceder a su perfil
-*/
+<!-- Se muestra la infromación del usuarios actual y 
+proporciona un enlace para acceder a su perfil-->
 <hr>
 <h3>Reporte de Estudiantes</h3>
 <table class="table  table-striped table-hover table-bordered" id="data">
@@ -149,10 +144,7 @@ proporciona un enlace para acceder a su perfil
           <td><img src="images/'.$result['photo'].'" height="50px"></td>';?>
       </tr>  
      <?php $i++;} ?>
-/*
-Se crea un reporte de estudiante en forma de tabla,
-mostrando información básica sobre cada estudiante
-*/
-    
+     <!-- Se crea un reporte de estudiante en forma de tabla,
+mostrando información básica sobre cada estudiante -->
   </tbody>
 </table>

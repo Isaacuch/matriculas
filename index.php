@@ -82,11 +82,9 @@
                 ?>
               </div>
             </div>
+            <!-- Formulario de estudiantes para matricularse 
+            con su correpondiente validación de cada campo solicitado -->
 
-/* 
-Formulario de estudiantes para matricularse 
-con su correpondiente validación de cada campo solicitado
-*/
           <?php } ?>
           <form enctype="multipart/form-data" method="POST" action="">
             <div class="form-group">
@@ -102,10 +100,9 @@ con su correpondiente validación de cada campo solicitado
               <label for="sede">Sede del Estudiante</label>
               <select name="sede" class="form-control" id="sede" required="">
                 <option>Selecciona</option>
-                /*
-                Opciones disponibles de las sedes
-                Es importante ya que aquí es donde se cambian
-                 */
+                <!-- Opciones disponibles de las sedes
+                Es importante ya que aquí es donde se cambian -->
+                
                 <option value="Alajuelita, Concepción">Alajuelita, Concepción</option>
                 <option value="Hatillo, 25 de Julio">Hatillo, 25 de Julio</option>
                 <option value="Desamparados, Linda Vista">Desamparados, Linda Vista</option>
@@ -120,10 +117,10 @@ con su correpondiente validación de cada campo solicitado
               <label for="class">Centros interactivos para matricular</label>
               <select name="class" class="form-control" id="class" required="">
                 <option>Selecciona</option>
-                /*
-                Opciones del los cursos disponibles
+                <!-- Opciones del los cursos disponibles
                 Aquí y en los archivos que se necesiten se pueden cambiar
-                si se necesitara algún cambio*/
+                si se necesitara algún cambio -->
+                
                 <option value="Computación">Computación</option>
                 <option value="Robótica">Robótica</option>
                 <option value="Programación">Programación</option>
@@ -144,7 +141,7 @@ con su correpondiente validación de cada campo solicitado
         </div>
       </div>
   </div>
-  /*Listado de los cursos disponibles es aquí donde se pueden editar el mostrado de los cursos */
+  <!-- Listado de los cursos disponibles es aquí donde se pueden editar el mostrado de los cursos -->
   <div class="container1">
     <h1 class="text-center">Lista de Cursos Disponibles 2024</h1><br>
     <ul>
@@ -154,12 +151,11 @@ con su correpondiente validación de cada campo solicitado
         <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
         <p>Requisito: Estar matriculado en la Fundación</p>
         <img src="admin/images/progra1.jpg" alt="Imagen 1">
-        /*
-        Es importante que se debe seguir este código, por si se quiere cambiar la imagen
+        <!-- Es importante que se debe seguir este código, por si se quiere cambiar la imagen
         ejemplo: se obtiene la imagen se agrega en la sección de imagenes en admin para despues 
         coger el mismo codigo solo se le cambia el nombre de la imagen por la nueva
-        tener en cuenta la ruta en donde agrego la imagen 
-         */
+        tener en cuenta la ruta en donde agrego la imagen  -->
+
       </div>
       <ul>
 

@@ -21,9 +21,7 @@ sí la página no es el index, redirige al usuario a index.php
      <li class="breadcrumb-item active" aria-current="page">Listado Estudiantes</li>
   </ol>
 </nav>
-/*
-Realizamos la parte del menú de navegación
-*/
+<!-- Realizamos la parte del menú de navegación -->
 
 <?php if(isset($_GET['delete']) || isset($_GET['edit'])) {?>
   <div role="alert" aria-live="assertive" aria-atomic="true" class="toast fade" data-autohide="true" data-animation="true" data-delay="2000">
@@ -79,14 +77,10 @@ sea el de eliminar o el de editar, para determinar si se realizo la acción del 
     </tr>
   </thead>
   <tbody>
-/*
-Se crea una tabla donde se mustra
-la información del estudiante 
-*/
-
+    <!-- Se crea una tabla donde se mustra 
+    la información del estudiante  -->
 
     <?php 
-
       $query=mysqli_query($db_con,'SELECT * FROM `student_info` ORDER BY `student_info`.`datetime` DESC;');
       $i=1;
       while ($result = mysqli_fetch_array($query)) { ?>
@@ -107,9 +101,7 @@ la información del estudiante
              <i class="fas fa-trash-alt"></i></a></td>';?>
       </tr>  
      <?php $i++;} ?>
-/*
-Se mustran los datos de los estudiantes matriculados y almacenados de la base de datos. 
-*/
+     <!-- Se mustran los datos de los estudiantes matriculados y almacenados de la base de datos.  -->
     
   </tbody>
 </table>

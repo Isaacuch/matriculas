@@ -1,8 +1,6 @@
-/* 
-Se incluye el archivo de base de datos
+<!-- Se incluye el archivo de base de datos
 Se inicia la sesión php
-Se procesa los datos del formulario registro
-*/
+Se procesa los datos del formulario registro -->
 <?php require_once 'db_con.php';
 session_start();
 if (isset($_POST['register'])) {
@@ -156,7 +154,8 @@ Aquí termina la sentencia del envio del correo con la contraseña predeterminad
 				}
 			}; ?>
 		</div>
-		/*Formulario de Registro y procesamiento del mismo*/
+		<!-- Formulario de Registro y procesamiento del mismo -->
+		
 		<div class="row animate__animated animate__pulse">
 			<div class="col-md-8 offset-md-2">
 				<form method="POST" enctype="multipart/form-data">

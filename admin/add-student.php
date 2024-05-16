@@ -76,10 +76,9 @@ Realizamos un insert alert para notificar al usuario de éxito o error en la ope
 	</div>
 
 		<?php } ?>
-/*
-Realizamos el llenado de los campos por parte del estudiante o encargado
-una verificando que se cumplan los datos se almacenan en la Base de Datos.
-*/
+		<!--Realizamos el llenado de los campos por parte del estudiante o encargado
+			una verificando que se cumplan los datos se almacenan en la Base de Datos. -->
+
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">
 		    <label for="name">Nombre de Estudiante</label>

@@ -19,9 +19,7 @@ sí la página no es el index, redirige al usuario a index.php
      <li class="breadcrumb-item active" aria-current="page">Todos los Usuarios</li>
   </ol>
 </nav>
-/*
-Realizamos la parte del menú de navegación
-*/
+<!-- Realizamos la parte del menú de navegación -->
 
 <table class="table  table-striped table-hover table-bordered" id="data">
   <thead class="thead-dark">
@@ -35,10 +33,8 @@ Realizamos la parte del menú de navegación
     </tr>
   </thead>
   <tbody>
-/*
-Se crea una tabla donde se mustra
-la información del estudiante 
-*/
+    <!-- Se crea una tabla donde se mustra la información del estudiante  -->
+
     <?php 
       $query=mysqli_query($db_con,'SELECT * FROM `users`');
       $i=1;
@@ -53,9 +49,7 @@ la información del estudiante
           <td>'.$result['status'].'</td>';?>
       </tr>  
      <?php $i++;} ?>
-/*
-Se mustran los datos de los usuarios administradores. 
-*/
+     <!-- Se mustran los datos de los usuarios administradores.  -->
     
   </tbody>
 </table>

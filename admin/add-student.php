@@ -87,7 +87,7 @@ una verificando que se cumplan los datos se almacenan en la Base de Datos.
 	  	</div>
 	  	<div class="form-group">
 		    <label for="roll">Número de Cédula</label>
-		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{9}" id="roll" required="">
+		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{9}" id="roll" required="Formato no establecido">
 	  	</div>
 		
 	  	

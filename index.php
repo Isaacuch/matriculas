@@ -95,7 +95,7 @@ con su correpondiente validación de cada campo solicitado
             </div>
             <div class="form-group">
               <label for="roll">Número de Cédula</label>
-              <input name="roll" type="text" value="<?= isset($roll) ? $roll : ''; ?>" class="form-control" pattern="[0-9]{9}" id="roll" required="Formato no establecido">
+              <input name="roll" type="text" value="<?= isset($roll) ? $roll : ''; ?>" class="form-control" pattern="[0-9]{9}" id="roll" required="" oninvalid="this.setCustomValidity('Formato no establecido')" oninput="this.setCustomValidity('')">
             </div>
 
             <div class="form-group">

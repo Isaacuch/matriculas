@@ -59,7 +59,6 @@
             <ul>
         </nav>
 
-/* Se llama a la funcion student insert Into para verificar si el estudiante se agrega correctamente */
       <div class="row1">
         <div class="col-sm-6">
           <?php if (isset($datainsert)) { ?>
@@ -79,6 +78,7 @@
                 if (isset($datainsert['inserterror'])) {
                   echo $datainsert['inserterror'];
                 }
+                /* Se llama a la funcion student insert Into para verificar si el estudiante se agrega correctamente */
                 ?>
               </div>
             </div>

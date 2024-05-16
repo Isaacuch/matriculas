@@ -111,7 +111,7 @@
            
             <div class="form-group">
               <label for="pcontact">Teléfono de Contacto</label>
-              <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-9]{8}" value="<?= isset($pcontact) ? $pcontact : ''; ?>" placeholder="+506........" required="">
+              <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-9]{8}" value="<?= isset($pcontact) ? $pcontact : ''; ?>" placeholder="+506........" required="" oninvalid="this.setCustomValidity('Formato no establecido, vuelva a intentarlo')" oninput="this.setCustomValidity('')">
             </div>
             <div class="form-group">
               <label for="class">Centros interactivos para matricular</label>

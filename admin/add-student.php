@@ -86,7 +86,7 @@ Realizamos un insert alert para notificar al usuario de éxito o error en la ope
 	  	</div>
 	  	<div class="form-group">
 		    <label for="roll">Número de Cédula</label>
-		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{9}" id="roll" required="Formato no establecido">
+		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{9}" id="roll" required=""oninvalid="this.setCustomValidity('Formato no establecido, vuelva a intentarlo')" oninput="this.setCustomValidity('')">
 	  	</div>
 		
 	  	
@@ -102,7 +102,7 @@ Realizamos un insert alert para notificar al usuario de éxito o error en la ope
 
 	  	<div class="form-group">
 		    <label for="pcontact">Teléfono de Contacto</label>
-		    <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-9]{8}" value="<?= isset($pcontact)? $pcontact: '' ; ?>" placeholder="+506........" required="">
+		    <input name="pcontact" type="text" class="form-control" id="pcontact" pattern="[0-9]{8}" value="<?= isset($pcontact)? $pcontact: '' ; ?>" placeholder="+506........" required="" oninvalid="this.setCustomValidity('Formato no establecido, vuelva a intentarlo')" oninput="this.setCustomValidity('')">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="class">Centros interactivos para matricular</label>

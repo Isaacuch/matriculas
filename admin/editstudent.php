@@ -83,7 +83,7 @@ Sí la actualización fue exitosa se establece un mensaje de éxito */
 	  	</div>
 	  	<div class="form-group">
 		    <label for="roll">Número de Cédula</label>
-		    <input name="roll" type="text" class="form-control" pattern="[0-9]{9}" id="roll" value="<?php echo $row['roll']; ?>" required="">
+		    <input name="roll" type="text" class="form-control" pattern="[0-9]{9}" id="roll" value="<?php echo $row['roll']; ?>" required="" oninvalid="this.setCustomValidity('Formato no establecido, vuelva a intentarlo')" oninput="this.setCustomValidity('')">
 	  	</div>
 
 		  <div class="form-group">
@@ -98,7 +98,7 @@ Sí la actualización fue exitosa se establece un mensaje de éxito */
 	  	
 	  	<div class="form-group">
 		    <label for="pcontact">Número de Contacto</label>
-		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="[0-9]{8}" placeholder="+506..." required="">
+		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="[0-9]{8}" placeholder="+506..." required="" oninvalid="this.setCustomValidity('Formato no establecido, vuelva a intentarlo')" oninput="this.setCustomValidity('')">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="class">Matricula del Curso interactivo</label>

@@ -19,14 +19,13 @@ sí la página no es el index, redirige al usuario a index.php
   	$pcontact = $_POST['pcontact'];
 	  $class = $_POST['class'];
 
-  	$photo = explode('.', $_FILES['photo']['name']);
-  	$photo = end($photo); 
-  	$photo = $roll.date('Y-m-d-m-s').'.'.$photo;
+  	$roll = explode('.', $_FILES['roll']['name']);
+  	$roll = end($roll); 
+  	$roll = $roll.date('Y-m-d-m-s').'$roll';
 
   	$query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `sede`, `pcontact`, `photo`) VALUES ('$name', '$roll', '$class', '$sede', '$pcontact','$photo');";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Estudiante Ingresado Exitosamente</p>';
-  		move_uploaded_file($_FILES['photo']['tmp_name'], 'images/'.$photo);
   	}else{
   		$datainsert['inserterror']= '<p style="color: red;">Estudiante no ingresado, revise la información diligenciada.</p>';
   	}

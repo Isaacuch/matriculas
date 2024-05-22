@@ -3,12 +3,12 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+  <!-- Requiere archivos de metadatos -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Bootstrap CSS -->
+  <!-- archivos de bootstrap y CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,6 +17,9 @@
 </head>
 
 <body>
+  <!-- El container3 es para darle estilo o una forma de acomodo en el CSS-->
+  <!-- Lo que realiza esta función es que pregunta donde está el usuario, si está
+       en otra parte que no es el index redireccionelo al index.php (El index del usuario normal)-->
   <div class="Container3">
     <?php
     $corepage = explode('/', $_SERVER['PHP_SELF']);
@@ -28,7 +31,10 @@
       }
     } 
     
-/* Ingreso de Datos  */
+    
+/* Ingreso de Datos  
+   El sistema agrega al estudiante con sus respectivos campos*/
+
     if (isset($_POST['addstudent'])) {
       $name = $_POST['name'];
       $roll = $_POST['roll'];
@@ -78,12 +84,13 @@
                 if (isset($datainsert['inserterror'])) {
                   echo $datainsert['inserterror'];
                 }
-                /* Se llama a la funcion student insert Into para verificar si el estudiante se agrega correctamente */
+                /* Se llama a la funcion Student Insert Alert para verificar si el estudiante se agrega correctamente */
                 ?>
               </div>
             </div>
             <!-- Formulario de estudiantes para matricularse 
             con su correpondiente validación de cada campo solicitado -->
+            <!-- Mostrado de campos de llenado para el estudiante-->
 
           <?php } ?>
           <form enctype="multipart/form-data" method="POST" action="">

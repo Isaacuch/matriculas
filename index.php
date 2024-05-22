@@ -171,6 +171,14 @@
           <p>Descripción: Curso Introductorio sobre programación básica</p>
           <p>Horario: De lunes a Viernes, de 12md a 3pm</p>
           <p>Requisito: Estar matriculado en la Fundación</p>
+          <!-- Es es está parte donde se cambian las imagenes en el sistema.
+              Para cambiarla es relativamente facil pasos: 1. Tener la imagen es nuestro equipo es decir descargada y en formato png o jpg.
+              2. Agregarla al sistema en la parte de Images arrastrandola o bien pegandola cualquiera de las opciones
+            3. Cuando la imagen este en el sistema nos desplazamos a está sección.
+          4.Nos vamos a la parte de los Cursos y donde vea el simbolo (<img src=) le damos la ruta de la imagen, es decir ejemplo:
+        <img src="admin/images/Ejemplo.png" alt="Imagen #">  
+          en donde dice Ejemplo.png en está parte agregamos el nombre de la imagen y le donde dice # se le pone el numero correspodiente a la imagen.-->
+                               
           <img src="admin/images/R0.png" alt="Imagen 2">
         </div>
         <ul>

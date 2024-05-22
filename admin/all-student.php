@@ -94,11 +94,12 @@ sea el de eliminar o el de editar, para determinar si se realizo la acción del 
           <td>'.ucwords($result['class']).'</td>
           <td><img src="images/'.$result['photo'].'" height="50px"></td>
           <td>
-            <a class="btn btn-xs btn-warning" href="index.php?page=editstudent&id='.base64_encode($result['id']).'&photo='.base64_encode($result['photo']).'">
-              <i class="fa fa-edit"></i></a>
+          <a class="btn btn-xs btn-warning" href="index.php?page=editstudent&id='.base64_encode($result['id']).'&photo='.base64_encode($result['photo']).'">
+          <i class="fa fa-edit"></i></a>
 
-             &nbsp; <a class="btn btn-xs btn-danger" onclick="javascript:confirmationDelete($(this));return false;" href="index.php?page=delete&id='.base64_encode($result['id']).'&photo='.base64_encode($result['photo']).'">
-             <i class="fas fa-trash-alt"></i></a></td>';?>
+         &nbsp; <a class="btn btn-xs btn-danger" onclick="javascript:confirmationDelete($(this));return false;" href="index.php?page=delete&id='.base64_encode($result['id']).'&photo='.base64_encode($result['photo']).'">
+         <i class="fas fa-trash-alt"></i></a></td>';?>
+
       </tr>  
      <?php $i++;} ?>
      <!-- Se mustran los datos de los estudiantes matriculados y almacenados de la base de datos.  -->

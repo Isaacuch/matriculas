@@ -28,11 +28,11 @@ si existe la solicitud, significa que ha sido enviado
   	$class = $_POST['class'];
 /* Se recuperan los datos del formulario enviados por el post */
   	
-  	if (!empty($_FILES['roll']['name'])) {
-  		 $roll = $_FILES['roll']['name'];
-	  	 $roll = explode('.', $roll);
-		 $roll = end($roll); 
-		 $roll = $roll.date('Y-m-d-m-s').'.'.$roll;
+  	if (!empty($_FILES['photo']['name'])) {
+  		 $photo = $_FILES['photo']['name'];
+	  	 $photo = explode('.', $photo);
+		 $photo = end($photo); 
+		 $photo = $roll.date('Y-m-d-m-s').'.'.$photo;
   	}else{
   		$photo = $oldPhoto;
   	}

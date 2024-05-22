@@ -195,7 +195,7 @@
               </div>
               <ul>
 
-              /*Definición del formulario para observar la información del estudiante */
+              <!-- Definición del formulario para observar la información del estudiante -->
                 <?php if (isset($_POST['showinfo'])) {
                   $choose = $_POST['choose'];
                   $roll = $_POST['roll'];

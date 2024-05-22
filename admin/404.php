@@ -4,7 +4,5 @@
 	Not Found!
 	</h1>
 </div>
-/* 
-El metodo nos permite crear un mensaje de error e indicar si el
-contenido es peligroso o de error "404,Not found!"
-*/
+<!--El metodo nos permite crear un mensaje de error e indicar si el
+contenido es peligroso o de error "404,Not found!" -->

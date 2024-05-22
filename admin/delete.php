@@ -9,9 +9,9 @@ if (isset($_SESSION['user_login'])) {
 	}else{
 		header('Location: index.php?page=all-student&delete=error');
 	}
-	/*Se crea una respuesta para informar si fue eliminado correctamente o error */
 }else{
 	header('Location: login.php');
  }
+ /*Se crea una respuesta para informar si fue eliminado correctamente o error */
  /*Eliminación de un estudiante de la base de datos */
 
